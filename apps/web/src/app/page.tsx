@@ -1,35 +1,35 @@
-import { Metadata } from "next";
-import { Button, Card } from "ui";
+import { Metadata } from 'next';
+import { Button, Card } from 'ui';
 
 const CARD_CONTENT = [
   {
-    title: "Caching Tasks",
-    href: "https://turbo.build/repo/docs/core-concepts/caching",
-    cta: "Read More",
+    title: 'Caching Tasks',
+    href: 'https://turbo.build/repo/docs/core-concepts/caching',
+    cta: 'Read More',
   },
   {
-    title: "Running Tasks",
-    href: "https://turbo.build/repo/docs/core-concepts/monorepos/running-tasks",
-    cta: "Read More",
+    title: 'Running Tasks',
+    href: 'https://turbo.build/repo/docs/core-concepts/monorepos/running-tasks',
+    cta: 'Read More',
   },
   {
-    title: "Configuration Options",
-    href: "https://turbo.build/repo/docs/reference/configuration",
-    cta: "Read More",
+    title: 'Configuration Options',
+    href: 'https://turbo.build/repo/docs/reference/configuration',
+    cta: 'Read More',
   },
 ];
 
 export const metadata: Metadata = {
-  title: "Web - Turborepo Example",
+  title: 'Web - Turborepo Example',
 };
 
 export default function Home() {
   return (
     <div className="flex min-h-screen flex-col items-center justify-center py-2">
-      <main className="mx-auto w-auto px-4 pt-16 pb-8 sm:pt-24 lg:px-8">
+      <main className="mx-auto w-auto px-4 pb-8 pt-16 sm:pt-24 lg:px-8">
         <h1 className="mx-auto text-center text-6xl font-extrabold tracking-tight text-white sm:text-7xl lg:text-8xl xl:text-8xl">
           Web
-          <span className="block bg-gradient-to-r from-brandred to-brandblue bg-clip-text text-transparent px-2">
+          <span className="from-brandred to-brandblue block bg-gradient-to-r bg-clip-text px-2 text-transparent">
             Turborepo Example
           </span>
         </h1>
@@ -37,8 +37,8 @@ export default function Home() {
           <Button />
         </div>
 
-        <div className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-4 place-content-evenly">
-          {CARD_CONTENT.map((card) => (
+        <div className="mt-12 grid grid-cols-1 place-content-evenly gap-4 sm:grid-cols-3">
+          {CARD_CONTENT.map(card => (
             <Card key={card.title} {...card} />
           ))}
         </div>
