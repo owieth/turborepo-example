@@ -10,6 +10,8 @@
   },
   "dependencies": {
     "next": "^13.4.1",
+    "nextra": "^2.11.0",
+    "nextra-theme-docs": "^2.11.0",
     "ui": "*"
   },
   "devDependencies": {
