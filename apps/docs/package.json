@@ -13,13 +13,8 @@
     "ui": "*"
   },
   "devDependencies": {
-    "@types/node": "^18.11.17",
-    "@types/react": "^18.2.5",
-    "@types/react-dom": "^18.2.4",
-    "autoprefixer": "^10.4.13",
     "eslint-config-custom": "*",
     "tailwind-config": "*",
-    "tsconfig": "*",
-    "typescript": "^4.9.4"
+    "tsconfig": "*"
   }
 }
