@@ -1,20 +1,20 @@
 {
   "private": true,
   "scripts": {
-    "build": "turbo run build",
-    "dev": "turbo run dev",
-    "lint": "turbo run lint",
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "lint": "turbo lint",
+    "clean": "turbo clean",
     "prettier": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
-    "@turbo/gen": "^1.9.7",
     "eslint": "^7.32.0",
     "eslint-config-custom": "*",
-    "prettier-plugin-tailwindcss": "^0.2.6",
-    "prettier": "^2.5.1",
+    "prettier": "^2.7.1",
+    "prettier-plugin-tailwindcss": "^0.1.11",
     "turbo": "latest"
   },
-  "name": "my-turborepo",
+  "name": "turborepo-example",
   "packageManager": "yarn@1.22.15",
   "workspaces": [
     "apps/*",
