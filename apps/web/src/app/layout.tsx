@@ -1,5 +1,4 @@
-import "../styles/globals.css";
-// include styles from the ui package
+import "tailwind-config/globals.css";
 import "ui/styles.css";
 
 export default function RootLayout({
