@@ -16,11 +16,11 @@
     "check-types": "tsc --noEmit"
   },
   "dependencies": {
-    "react": "^18.2.0",
+    "react": "^18.3.1",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@types/react": "^18.2.5",
+    "@types/react": "^18.3.4",
     "@types/node": "^18.11.17",
     "@types/react-dom": "^18.2.4",
     "eslint-config-custom": "*",
