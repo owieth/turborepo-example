@@ -9,7 +9,7 @@
   },
   "devDependencies": {
     "eslint-config-custom": "*",
-    "prettier": "^2.7.1",
+    "prettier": "^3.3.3",
     "prettier-plugin-tailwindcss": "^0.1.11",
     "turbo": "latest"
   },
