@@ -10,7 +10,7 @@
   "devDependencies": {
     "eslint-config-custom": "*",
     "prettier": "^3.3.3",
-    "prettier-plugin-tailwindcss": "^0.1.11",
+    "prettier-plugin-tailwindcss": "^0.6.6",
     "turbo": "latest"
   },
   "name": "turborepo-example",
