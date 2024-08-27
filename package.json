@@ -1,4 +1,6 @@
 {
+  "name": "turborepo-example",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "build": "turbo build",
@@ -13,7 +15,6 @@
     "prettier-plugin-tailwindcss": "^0.6.6",
     "turbo": "latest"
   },
-  "name": "turborepo-example",
   "packageManager": "yarn@1.22.15",
   "workspaces": [
     "apps/*",
