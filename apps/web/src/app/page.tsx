@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import { Button, Card } from 'ui';
+import { Button } from '@ui/components/button';
 
 const CARD_CONTENT = [
   {
@@ -34,13 +34,7 @@ export default function Home() {
           </span>
         </h1>
         <div className="mx-auto mt-5 max-w-xl sm:flex sm:justify-center md:mt-8">
-          <Button />
-        </div>
-
-        <div className="mt-12 grid grid-cols-1 place-content-evenly gap-4 sm:grid-cols-3">
-          {CARD_CONTENT.map(card => (
-            <Card key={card.title} {...card} />
-          ))}
+          <Button>Hello World</Button>
         </div>
       </main>
     </div>

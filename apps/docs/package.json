@@ -9,14 +9,15 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "^14.2.6",
+    "next": "^13.4.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "nextra": "^2.13.4",
     "nextra-theme-docs": "^2.13.4",
     "ui": "*"
   },
   "devDependencies": {
     "eslint-config-custom": "*",
-    "tailwind-config": "*",
     "tsconfig": "*"
   }
 }
