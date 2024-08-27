@@ -7,7 +7,7 @@
     "dev": "turbo dev",
     "lint": "turbo lint",
     "clean": "turbo clean",
-    "prettier": "prettier --write \"**/*.{ts,tsx,md}\""
+    "prettier": "prettier --write --ignore-path .gitignore ."
   },
   "devDependencies": {
     "eslint-config-custom": "*",
