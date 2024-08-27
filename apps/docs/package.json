@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "next": "^14.2.6",
-    "nextra": "^2.11.0",
+    "nextra": "^2.13.4",
     "nextra-theme-docs": "^2.13.4",
     "ui": "*"
   },
