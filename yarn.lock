@@ -503,12 +503,12 @@
   resolved "https://registry.yarnpkg.com/@tsconfig/node16/-/node16-1.0.4.tgz#0b92dcc0cc1c81f6f306a381f28e31b1a56536e9"
   integrity sha512-vxhUy4J8lyeyinH7Azl1pdd43GJhZH/tP2weN8TntQblOY+A0XbT8DJk1/oCPuOOyg/Ja757rG0CgHcWC8OfMA==
 
-"@turbo/gen@^2.1.0":
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/@turbo/gen/-/gen-2.1.0.tgz#768f08169ae49c4d9e3b718b7cd3c4e56a6536b0"
-  integrity sha512-R7T8qU/J1pDk0MBpmsFLpLIERyh6NNHfdUP747RkSP7jv9gcIpRQ2Wl1fIXpbBmXqckV8QW+4laRvoq49jMM6g==
+"@turbo/gen@^2.1.1":
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/@turbo/gen/-/gen-2.1.1.tgz#bf60fac8d76a0984a7be336ed5cffeae397bc430"
+  integrity sha512-IaC8k3u/00giD3WjEy81Zwj8CFZJCrSf7sCA8gdug76C2DUm79CdAQ+tImR3KOMwnefIP0LH1NSPtREMKi59zQ==
   dependencies:
-    "@turbo/workspaces" "2.1.0"
+    "@turbo/workspaces" "2.1.1"
     commander "^10.0.0"
     fs-extra "^10.1.0"
     inquirer "^8.2.4"
@@ -520,10 +520,10 @@
     update-check "^1.5.4"
     validate-npm-package-name "^5.0.0"
 
-"@turbo/workspaces@2.1.0":
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/@turbo/workspaces/-/workspaces-2.1.0.tgz#79be6a8443623652d67a766cac2b48ed7d0d7db0"
-  integrity sha512-WRvfzUJRjnqLOjELSddM/3dc/ah9aXtUSYf4BK9PxKlwmtbDrgluLho3vMkiO1zcPF7N8bg7EeJKxZcmcBHw3A==
+"@turbo/workspaces@2.1.1":
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/@turbo/workspaces/-/workspaces-2.1.1.tgz#2afc0a86449f28fb51a31b1dd756dc266593609d"
+  integrity sha512-E9tnNIBRC09IjM521TaExmHUBo26qT41OCSgFpg2FdmLiobqxG2G2hzmdbDFC7QwcVifVF9FD/3gRtDqRqDj5g==
   dependencies:
     commander "^10.0.0"
     execa "5.1.1"
