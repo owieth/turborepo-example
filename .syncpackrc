@@ -1,0 +1,10 @@
+{
+  "versionGroups": [
+    {
+      "dependencies": [
+        "$LOCAL"
+      ],
+      "isIgnored": true
+    }
+  ]
+}
