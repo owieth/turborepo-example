@@ -23,7 +23,7 @@
     "@radix-ui/react-slot": "^1.1.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^1.2.1",
-    "lucide-react": "^0.439.0",
+    "lucide-react": "^0.441.0",
     "react-hook-form": "^7.47.0",
     "recharts": "^2.8.0",
     "tailwind-merge": "^1.13.2",
