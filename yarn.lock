@@ -5270,10 +5270,10 @@ netmask@^2.0.2:
   resolved "https://registry.yarnpkg.com/netmask/-/netmask-2.0.2.tgz#8b01a07644065d536383835823bc52004ebac5e7"
   integrity sha512-dBpDMdxv9Irdq66304OLfEmQ9tbNRFnFTuZiLo+bD+r332bBmMJ8GBLXklIXXgxd3+v9+KUnZaUR5PJMa75Gsg==
 
-next-themes@^0.3.0:
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/next-themes/-/next-themes-0.3.0.tgz#b4d2a866137a67d42564b07f3a3e720e2ff3871a"
-  integrity sha512-/QHIrsYpd6Kfk7xakK4svpDI5mmXP0gfvCoJdGpZQ2TOrQZmsW0QxjaiLn8wbIKjtm4BTSqLoix4lxYYOnLJ/w==
+next-themes@^0.4.0:
+  version "0.4.3"
+  resolved "https://registry.yarnpkg.com/next-themes/-/next-themes-0.4.3.tgz#ea54552d5986936d177eed393ea50b658ae44800"
+  integrity sha512-nG84VPkTdUHR2YeD89YchvV4I9RbiMAql3GiLEQlPvq1ioaqPaIReK+yMRdg/zgiXws620qS1rU30TiWmmG9lA==
 
 next@^14.2.14:
   version "14.2.14"
@@ -5298,16 +5298,16 @@ next@^14.2.14:
     "@next/swc-win32-ia32-msvc" "14.2.14"
     "@next/swc-win32-x64-msvc" "14.2.14"
 
-nextra-theme-docs@^3.2.0:
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/nextra-theme-docs/-/nextra-theme-docs-3.2.0.tgz#0b5c10f0b3e508dddc77ea1589ac059263f2b9ed"
-  integrity sha512-bUa0W3rh+OgUrE8aJXqYpjVAu0AmkJuHZd9Me0qjGK5YinSvQv7jzAWI7+Af4vnWdRkPlh6MIUUHAOPo+Yalcw==
+nextra-theme-docs@^3.2.3:
+  version "3.2.3"
+  resolved "https://registry.yarnpkg.com/nextra-theme-docs/-/nextra-theme-docs-3.2.3.tgz#b32e5edf6e4e51d0331d2de2d6413c3078b25d1a"
+  integrity sha512-kRhnLxbAbD3FgR93yLbu6Iz6XvErka3I5CcVo3VobLuV1mefbZ1T6DfiY6q0KJoHLGRrJESsFSarIqPjKOx00g==
   dependencies:
     "@headlessui/react" "^2.1.2"
     clsx "^2.0.0"
     escape-string-regexp "^5.0.0"
     flexsearch "^0.7.43"
-    next-themes "^0.3.0"
+    next-themes "^0.4.0"
     scroll-into-view-if-needed "^3.1.0"
     zod "^3.22.3"
 
