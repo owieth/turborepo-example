@@ -747,12 +747,12 @@
   resolved "https://registry.yarnpkg.com/@tsconfig/node16/-/node16-1.0.4.tgz#0b92dcc0cc1c81f6f306a381f28e31b1a56536e9"
   integrity sha512-vxhUy4J8lyeyinH7Azl1pdd43GJhZH/tP2weN8TntQblOY+A0XbT8DJk1/oCPuOOyg/Ja757rG0CgHcWC8OfMA==
 
-"@turbo/gen@^2.3.0":
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/@turbo/gen/-/gen-2.3.0.tgz#c4fc78ffdcf21a75044b73d3b67032f293244089"
-  integrity sha512-H0ktAVBm8bbngQvklOOBDEIXqSII1Ok0SYy6wUu7UTR81KwDumXtnCi5xUhSHzv4UCF+Gvkle8Fol1ge8ZD/Lg==
+"@turbo/gen@^2.3.1":
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/@turbo/gen/-/gen-2.3.1.tgz#8057ad2ccdcf55f5aaa592960c1368247076f683"
+  integrity sha512-QlxmNhrgH9vkI8e13O3Wd3wnLLb+JbGBeifaYywORN9bY29YmObhxLvBTCYGoYFED1nHRxB19mTJBQjPdejskA==
   dependencies:
-    "@turbo/workspaces" "2.3.0"
+    "@turbo/workspaces" "2.3.1"
     commander "^10.0.0"
     fs-extra "^10.1.0"
     inquirer "^8.2.4"
@@ -764,10 +764,10 @@
     update-check "^1.5.4"
     validate-npm-package-name "^5.0.0"
 
-"@turbo/workspaces@2.3.0":
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/@turbo/workspaces/-/workspaces-2.3.0.tgz#fa61b6d4908dc4541439539e92503fc5966eb411"
-  integrity sha512-j7iexvpBIRK0J9TAVl8g0EcY2Ph5HjzKa0cWKGuGbrYUJ0Ow2X0l6M42uh6CzXwLKTQLw/i+wDAc3f2qBEU5xw==
+"@turbo/workspaces@2.3.1":
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/@turbo/workspaces/-/workspaces-2.3.1.tgz#6ec10890a97e3d329b27398596fb6c57d26d50a4"
+  integrity sha512-JIDt9G43l/HMOeZcbllbfq7Z8S+GEcjLC9tZS18fs0JQqKsd3lgCJebNS4tJM+3pplJVcM4CQv4BMQxoFW7Qsw==
   dependencies:
     commander "^10.0.0"
     execa "5.1.1"
