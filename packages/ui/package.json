@@ -26,7 +26,7 @@
     "lucide-react": "^0.461.0",
     "react-hook-form": "^7.53.2",
     "recharts": "^2.13.3",
-    "tailwind-merge": "^2.5.4",
+    "tailwind-merge": "^2.5.5",
     "tailwindcss-animate": "^1.0.6",
     "zod": "^3.22.4"
   }
