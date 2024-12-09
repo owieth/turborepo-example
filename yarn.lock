@@ -5295,10 +5295,10 @@ next@^14.2.14:
     "@next/swc-win32-ia32-msvc" "14.2.14"
     "@next/swc-win32-x64-msvc" "14.2.14"
 
-nextra-theme-docs@^3.2.3:
-  version "3.2.3"
-  resolved "https://registry.yarnpkg.com/nextra-theme-docs/-/nextra-theme-docs-3.2.3.tgz#b32e5edf6e4e51d0331d2de2d6413c3078b25d1a"
-  integrity sha512-kRhnLxbAbD3FgR93yLbu6Iz6XvErka3I5CcVo3VobLuV1mefbZ1T6DfiY6q0KJoHLGRrJESsFSarIqPjKOx00g==
+nextra-theme-docs@^3.2.5:
+  version "3.2.5"
+  resolved "https://registry.yarnpkg.com/nextra-theme-docs/-/nextra-theme-docs-3.2.5.tgz#10f4f8cbc3d1a2f210389aae5a98d909f81ea606"
+  integrity sha512-eF0j1VNNS1rFjZOfYqlrXISaCU3+MhZ9hhXY+TUydRlfELrFWpGzrpW6MiL7hq4JvUR7OBtHHs8+A+8AYcETBQ==
   dependencies:
     "@headlessui/react" "^2.1.2"
     clsx "^2.0.0"
