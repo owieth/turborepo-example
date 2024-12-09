@@ -5308,10 +5308,10 @@ nextra-theme-docs@^3.2.5:
     scroll-into-view-if-needed "^3.1.0"
     zod "^3.22.3"
 
-nextra@^3.2.4:
-  version "3.2.4"
-  resolved "https://registry.yarnpkg.com/nextra/-/nextra-3.2.4.tgz#21831ba3ebacf32c4c1da522e5c474dbf225fc53"
-  integrity sha512-xvQuPVtRoJTz4ynIbEkxYkEtviIX699lt4coij2IMmafYrBNaD0Ofj93jIz7VngYxyT9f4gWSiwqNgoIlnbsjQ==
+nextra@^3.2.5:
+  version "3.2.5"
+  resolved "https://registry.yarnpkg.com/nextra/-/nextra-3.2.5.tgz#d3bd2635095b6962a2b805a3b5fa91f20a299110"
+  integrity sha512-n665DRpI/brjHXM83G5LdlbYA2nOtjaLcWJs7mZS3gkuRDmEXpJj4XJ860xrhkYZW2iYoUMu32zzhPuFByU7VA==
   dependencies:
     "@formatjs/intl-localematcher" "^0.5.4"
     "@headlessui/react" "^2.1.2"
