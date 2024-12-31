@@ -6,8 +6,8 @@
   "dependencies": {
     "eslint-config-next": "^15.1.2",
     "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-react": "7.37.3",
-    "eslint-config-turbo": "^2.2.3"
+    "eslint-config-turbo": "^2.2.3",
+    "eslint-plugin-react": "7.37.3"
   },
   "publishConfig": {
     "access": "public"
