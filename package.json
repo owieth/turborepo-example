@@ -18,7 +18,7 @@
     "syncpack": "^13.0.0",
     "turbo": "^2.3.3"
   },
-  "packageManager": "yarn@1.22.15",
+  "packageManager": "yarn@4.3.1",
   "workspaces": [
     "apps/*",
     "packages/*"
