@@ -3621,7 +3621,7 @@ __metadata:
   dependencies:
     eslint-config-custom: "npm:*"
     next: "npm:15.1.3"
-    nextra: "npm:^4.0.0"
+    nextra: "npm:^4.0.4"
     nextra-theme-docs: "npm:^4.0.0"
     react: "npm:19.0.0"
     react-dom: "npm:19.0.0"
@@ -6374,7 +6374,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"katex@npm:^0.16.0, katex@npm:^0.16.9":
+"katex@npm:^0.16.0, katex@npm:^0.16.21, katex@npm:^0.16.9":
   version: 0.16.21
   resolution: "katex@npm:0.16.21"
   dependencies:
@@ -7770,9 +7770,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nextra@npm:^4.0.0":
-  version: 4.0.0
-  resolution: "nextra@npm:4.0.0"
+"nextra@npm:^4.0.4":
+  version: 4.0.4
+  resolution: "nextra@npm:4.0.4"
   dependencies:
     "@formatjs/intl-localematcher": "npm:^0.5.4"
     "@headlessui/react": "npm:^2.1.2"
@@ -7788,7 +7788,7 @@ __metadata:
     fast-glob: "npm:^3.3.2"
     github-slugger: "npm:^2.0.0"
     hast-util-to-estree: "npm:^3.1.0"
-    katex: "npm:^0.16.9"
+    katex: "npm:^0.16.21"
     mdast-util-from-markdown: "npm:^2.0.1"
     mdast-util-gfm: "npm:^3.0.0"
     mdast-util-to-hast: "npm:^13.2.0"
@@ -7815,7 +7815,7 @@ __metadata:
     next: ">=14"
     react: ">=18"
     react-dom: ">=18"
-  checksum: 10/09d4bd55974a1a36b2db17ad2787d2a34ececb375bc663aea03deaf1f267b0cd25c6362ec2fa2f97336e3486749f291723c50dee66619ad1d11d66767fbe9993
+  checksum: 10/ecf13f2c7a5ce82c6c4f49e6b54667c6e9ccaf111cff4e7cd412155782526320b5e92122eaae41fdca846808ceb5629f92cd263042867412c19065558e2b23e9
   languageName: node
   linkType: hard
 
