@@ -307,12 +307,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@hookform/resolvers@npm:^3.9.1":
-  version: 3.9.1
-  resolution: "@hookform/resolvers@npm:3.9.1"
+"@hookform/resolvers@npm:^4.1.2":
+  version: 4.1.2
+  resolution: "@hookform/resolvers@npm:4.1.2"
+  dependencies:
+    "@standard-schema/utils": "npm:^0.3.0"
   peerDependencies:
     react-hook-form: ^7.0.0
-  checksum: 10/4e7a24f79ead48db5c869c17b5f47412a7d628939f743bdc1248ea3a291b1a9dd777cd02f84326e91d258283a6351566f13bca5cb30f996e5a9db7ee490b5cc5
+  checksum: 10/8dbad9bcef7a98a8d794c069ac2b1f68734d33d3862d38b251430070751cb080d9d5c55f1eb5f737f5727ef1bc67e8b703dbeb5f6c68a4892838a94a969eb385
   languageName: node
   linkType: hard
 
@@ -1135,6 +1137,13 @@ __metadata:
   version: 2.3.0
   resolution: "@sindresorhus/merge-streams@npm:2.3.0"
   checksum: 10/798bcb53cd1ace9df84fcdd1ba86afdc9e0cd84f5758d26ae9b1eefd8e8887e5fc30051132b9e74daf01bb41fa5a2faf1369361f83d76a3b3d7ee938058fd71c
+  languageName: node
+  linkType: hard
+
+"@standard-schema/utils@npm:^0.3.0":
+  version: 0.3.0
+  resolution: "@standard-schema/utils@npm:0.3.0"
+  checksum: 10/7084f875d322792f2e0a5904009434c8374b9345b09ba89828b68fd56fa3c2b366d35bf340d9e8c72736ef01793c2f70d350c372ed79845dc3566c58d34b4b51
   languageName: node
   linkType: hard
 
@@ -10846,7 +10855,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "ui@workspace:packages/ui"
   dependencies:
-    "@hookform/resolvers": "npm:^3.9.1"
+    "@hookform/resolvers": "npm:^4.1.2"
     "@radix-ui/react-slot": "npm:^1.1.1"
     "@types/node": "npm:^22.13.1"
     "@types/react": "npm:^19.0.8"
