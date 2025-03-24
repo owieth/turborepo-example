@@ -3673,7 +3673,7 @@ __metadata:
     eslint-config-custom: "npm:*"
     next: "npm:15.2.0"
     nextra: "npm:^4.2.16"
-    nextra-theme-docs: "npm:^4.2.16"
+    nextra-theme-docs: "npm:^4.2.17"
     react: "npm:19.0.0"
     react-dom: "npm:19.0.0"
     tsconfig: "npm:*"
@@ -7847,9 +7847,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nextra-theme-docs@npm:^4.2.16":
-  version: 4.2.16
-  resolution: "nextra-theme-docs@npm:4.2.16"
+"nextra-theme-docs@npm:^4.2.17":
+  version: 4.2.17
+  resolution: "nextra-theme-docs@npm:4.2.17"
   dependencies:
     "@headlessui/react": "npm:^2.1.2"
     clsx: "npm:^2.1.0"
@@ -7861,10 +7861,10 @@ __metadata:
     zustand: "npm:^5.0.1"
   peerDependencies:
     next: ">=14"
-    nextra: 4.2.16
+    nextra: 4.2.17
     react: ">=18"
     react-dom: ">=18"
-  checksum: 10/31f037ed5098b5eb51f2dda28fe3aa3aa0dd7ab40307dfe42f0c6a3fd702d74a8630cbbd16bd21302b498fe01966b2ac2f1765afe9c35aec428368a8431ad1c7
+  checksum: 10/b7247347b84f1f04b68d7d49377265e16b22be191cb2822bce8e543165743dc16a87ae215b8600be21a830885a9951512ece894c7f1612b71a0a9c0676d8bcda
   languageName: node
   linkType: hard
 
