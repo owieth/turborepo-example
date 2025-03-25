@@ -11,7 +11,7 @@
   },
   "devDependencies": {
     "@turbo/gen": "^2.4.4",
-    "eslint": "^9.22.0",
+    "eslint": "^9.23.0",
     "eslint-config-custom": "*",
     "prettier": "^3.5.3",
     "prettier-plugin-tailwindcss": "^0.6.11",
