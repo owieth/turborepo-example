@@ -8,12 +8,12 @@
   },
   "devDependencies": {
     "@types/node": "^22.14.0",
-    "@types/react": "^19.0.10",
+    "@types/react": "^19.1.1",
     "@types/react-dom": "^19.0.4",
     "autoprefixer": "^10.4.21",
     "eslint-config-custom": "*",
     "postcss": "^8.5.3",
-    "react": "^19.0.0",
+    "react": "^19.1.0",
     "tailwindcss": "^4.1.4",
     "tsconfig": "*",
     "typescript": "5.8.2"
