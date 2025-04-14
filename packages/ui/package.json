@@ -16,7 +16,7 @@
     "react": "^19.0.0",
     "tailwindcss": "^4.1.4",
     "tsconfig": "*",
-    "typescript": "5.8.2"
+    "typescript": "5.8.3"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.0.1",
