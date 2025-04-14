@@ -9701,10 +9701,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tailwind-merge@npm:^3.0.2":
-  version: 3.0.2
-  resolution: "tailwind-merge@npm:3.0.2"
-  checksum: 10/f5142ddd670018f4816b8510b0464e703be369018544c35eeb8bbba48b9dc320b5f86561ed9c84602b66d367213ee1508cd28b7c9c572420cfa5ecfc848f28c7
+"tailwind-merge@npm:^3.2.0":
+  version: 3.2.0
+  resolution: "tailwind-merge@npm:3.2.0"
+  checksum: 10/ece231b18bf27cb70847e236d987e254c152e0440dbeb59c08ddf157de79fe89d6b7d1127c75d753e868f31dd77ded38ce8d23a1e405ff735a6642407c671fb9
   languageName: node
   linkType: hard
 
@@ -10210,7 +10210,7 @@ __metadata:
     react: "npm:^19.0.0"
     react-hook-form: "npm:^7.55.0"
     recharts: "npm:^2.15.2"
-    tailwind-merge: "npm:^3.0.2"
+    tailwind-merge: "npm:^3.2.0"
     tailwindcss: "npm:^4.1.4"
     tailwindcss-animate: "npm:^1.0.6"
     tsconfig: "npm:*"
