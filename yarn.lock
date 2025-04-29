@@ -1192,11 +1192,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@turbo/gen@npm:^2.5.0":
-  version: 2.5.0
-  resolution: "@turbo/gen@npm:2.5.0"
+"@turbo/gen@npm:^2.5.2":
+  version: 2.5.2
+  resolution: "@turbo/gen@npm:2.5.2"
   dependencies:
-    "@turbo/workspaces": "npm:2.5.0"
+    "@turbo/workspaces": "npm:2.5.2"
     commander: "npm:^10.0.0"
     fs-extra: "npm:^10.1.0"
     inquirer: "npm:^8.2.4"
@@ -1209,13 +1209,13 @@ __metadata:
     validate-npm-package-name: "npm:^5.0.0"
   bin:
     gen: dist/cli.js
-  checksum: 10/597ce1303e7b5b4266ec3ba6804bbf6cdd2050dee68ee8f0adeb871ca66bd923928efb0626ada4269d55580a5e175204c8937cc5aaf0fa35ff178752dfaf4a2c
+  checksum: 10/800be972254b0b933659943b88cd480f70aacd02a0890eb0e8af20ac1940827c74d481eab6d47a1e9ffa15f1b1748f36e1603b88eec51a789593d0278f5fc6a2
   languageName: node
   linkType: hard
 
-"@turbo/workspaces@npm:2.5.0":
-  version: 2.5.0
-  resolution: "@turbo/workspaces@npm:2.5.0"
+"@turbo/workspaces@npm:2.5.2":
+  version: 2.5.2
+  resolution: "@turbo/workspaces@npm:2.5.2"
   dependencies:
     commander: "npm:^10.0.0"
     execa: "npm:5.1.1"
@@ -1230,7 +1230,7 @@ __metadata:
     update-check: "npm:^1.5.4"
   bin:
     workspaces: dist/cli.js
-  checksum: 10/dbd26c6fc7c2b158c0bcc373e5b688b708790f7d42b707b5596ed014c420b41428a03c1bc9c0256d143c1e9d0b04d595d2bbc6f2623b321c67238f360bf50be1
+  checksum: 10/9ee03bd1b5058782bf05a121be62f4599ff04286828540548126b4011f015a60ab6e298b84b43780bd97d3b838af545e5df73a159f9cd6b19e17d747bcd9d4a3
   languageName: node
   linkType: hard
 
@@ -10092,7 +10092,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "turborepo-example@workspace:."
   dependencies:
-    "@turbo/gen": "npm:^2.5.0"
+    "@turbo/gen": "npm:^2.5.2"
     eslint: "npm:^9.25.1"
     eslint-config-custom: "npm:*"
     prettier: "npm:^3.5.3"
