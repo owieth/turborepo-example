@@ -8346,12 +8346,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-hook-form@npm:^7.56.2":
-  version: 7.56.2
-  resolution: "react-hook-form@npm:7.56.2"
+"react-hook-form@npm:^7.56.4":
+  version: 7.56.4
+  resolution: "react-hook-form@npm:7.56.4"
   peerDependencies:
     react: ^16.8.0 || ^17 || ^18 || ^19
-  checksum: 10/4cf58b99d5f5636aa5c679f0a05cdd9b3436b81dc89d9e5e0c17f2f64ea2b5037d8206804dbe971ed0b9a1bd05c289e0366c07a112e80fe20c1599d8a0e86f30
+  checksum: 10/ebb4d447aae47fbbac380ddf4f9cca0c9fb51bf962099174cad3233a5a569135fdb7879152a119862e596f602a7c5179625c1fb2fdfaa01f7be45d16d796d99d
   languageName: node
   linkType: hard
 
@@ -10294,7 +10294,7 @@ __metadata:
     lucide-react: "npm:^0.511.0"
     postcss: "npm:^8.5.3"
     react: "npm:^19.1.0"
-    react-hook-form: "npm:^7.56.2"
+    react-hook-form: "npm:^7.56.4"
     recharts: "npm:^2.15.3"
     tailwind-merge: "npm:^3.3.0"
     tailwindcss: "npm:^4.1.7"
