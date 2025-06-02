@@ -14,7 +14,7 @@
     "eslint-config-custom": "*",
     "postcss": "^8.5.3",
     "react": "^19.1.0",
-    "tailwindcss": "^4.1.7",
+    "tailwindcss": "^4.1.8",
     "tsconfig": "*",
     "typescript": "5.8.3"
   },
