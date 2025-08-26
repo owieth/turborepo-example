@@ -3572,7 +3572,7 @@ __metadata:
     eslint-config-custom: "npm:*"
     next: "npm:15.4.6"
     nextra: "npm:^4.3.0"
-    nextra-theme-docs: "npm:^4.2.17"
+    nextra-theme-docs: "npm:^4.4.0"
     react: "npm:19.1.0"
     react-dom: "npm:19.1.0"
     tsconfig: "npm:*"
@@ -7576,24 +7576,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nextra-theme-docs@npm:^4.2.17":
-  version: 4.2.17
-  resolution: "nextra-theme-docs@npm:4.2.17"
+"nextra-theme-docs@npm:^4.4.0":
+  version: 4.4.0
+  resolution: "nextra-theme-docs@npm:4.4.0"
   dependencies:
     "@headlessui/react": "npm:^2.1.2"
     clsx: "npm:^2.1.0"
     next-themes: "npm:^0.4.0"
-    react-compiler-runtime: "npm:0.0.0-experimental-22c6e49-20241219"
+    react-compiler-runtime: "npm:^19.1.0-rc.2"
     scroll-into-view-if-needed: "npm:^3.1.0"
-    zod: "npm:^3.22.3"
-    zod-validation-error: "npm:^3.0.0"
+    zod: "npm:4.0.0-beta.20250424T163858"
     zustand: "npm:^5.0.1"
   peerDependencies:
     next: ">=14"
-    nextra: 4.2.17
+    nextra: 4.4.0
     react: ">=18"
     react-dom: ">=18"
-  checksum: 10/b7247347b84f1f04b68d7d49377265e16b22be191cb2822bce8e543165743dc16a87ae215b8600be21a830885a9951512ece894c7f1612b71a0a9c0676d8bcda
+  checksum: 10/884bb3faa9c95e0b967a027142e576e3b92462517161ab6d5639617e44d02a01148d7ced4845f7766d382b55467b181fa04cc985fa3b1fa12b73dfc4d4e9f8ad
   languageName: node
   linkType: hard
 
@@ -8489,15 +8488,6 @@ __metadata:
   bin:
     rc: ./cli.js
   checksum: 10/5c4d72ae7eec44357171585938c85ce066da8ca79146b5635baf3d55d74584c92575fa4e2c9eac03efbed3b46a0b2e7c30634c012b4b4fa40d654353d3c163eb
-  languageName: node
-  linkType: hard
-
-"react-compiler-runtime@npm:0.0.0-experimental-22c6e49-20241219":
-  version: 0.0.0-experimental-22c6e49-20241219
-  resolution: "react-compiler-runtime@npm:0.0.0-experimental-22c6e49-20241219"
-  peerDependencies:
-    react: ^17.0.0 || ^18.0.0 || ^19.0.0
-  checksum: 10/035ec07e039296b704080aa9f959576a040d2fbbe16e3bdc01a89ec1f100ad5a4540247b6f336cc193c0757431a941233ff1c315a2764817abfe37659f5b1a9f
   languageName: node
   linkType: hard
 
@@ -11101,28 +11091,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"zod-validation-error@npm:^3.0.0":
-  version: 3.4.0
-  resolution: "zod-validation-error@npm:3.4.0"
-  peerDependencies:
-    zod: ^3.18.0
-  checksum: 10/b98b1bbba14a3bb31649a1566c8c5a5213ec70dcaa2cbb1e89db00d56648a446225b35a8f6768471730d7013f4f141cd70c2b9740d69e6433ebfa148aecdac2f
-  languageName: node
-  linkType: hard
-
 "zod@npm:4.0.0-beta.20250424T163858":
   version: 4.0.0-beta.20250424T163858
   resolution: "zod@npm:4.0.0-beta.20250424T163858"
   dependencies:
     "@zod/core": "npm:0.9.0"
   checksum: 10/41c13a60c38a6ecbd3ac116061e45464a8b71240087e768bb86abb07b49adebfd9ae8f96aa21d2cb18664f3df1bc3131d9cbaf3e5abf3e53b358ca5bd74f790e
-  languageName: node
-  linkType: hard
-
-"zod@npm:^3.22.3":
-  version: 3.24.1
-  resolution: "zod@npm:3.24.1"
-  checksum: 10/54e25956495dec22acb9399c168c6ba657ff279801a7fcd0530c414d867f1dcca279335e160af9b138dd70c332e17d548be4bc4d2f7eaf627dead50d914fec27
   languageName: node
   linkType: hard
 
