@@ -1716,12 +1716,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:^19.1.8":
-  version: 19.1.8
-  resolution: "@types/react@npm:19.1.8"
+"@types/react@npm:^19.1.11":
+  version: 19.1.11
+  resolution: "@types/react@npm:19.1.11"
   dependencies:
     csstype: "npm:^3.0.2"
-  checksum: 10/a3e6fe0f60f22828ef887f30993aa147b71532d7b1219dd00d246277eb7a9ca01ec533096237fa21ca1bccb3653373b4e8e59e5ae59f9c793058384bbc1f4d5c
+  checksum: 10/a9b8356783a5dd7f37803b9e4021610fe479186d1b8ee9c0c67a0f2f91b853e142349c913d39fd05af77065eb67f098b9b216214d82cdacf99c1589e04ed0d64
   languageName: node
   linkType: hard
 
@@ -3573,7 +3573,7 @@ __metadata:
     next: "npm:15.4.6"
     nextra: "npm:^4.3.0"
     nextra-theme-docs: "npm:^4.4.0"
-    react: "npm:19.1.0"
+    react: "npm:19.1.1"
     react-dom: "npm:19.1.0"
     tsconfig: "npm:*"
     ui: "npm:*"
@@ -8556,10 +8556,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react@npm:19.1.0, react@npm:^19.1.0":
-  version: 19.1.0
-  resolution: "react@npm:19.1.0"
-  checksum: 10/d0180689826fd9de87e839c365f6f361c561daea397d61d724687cae88f432a307d1c0f53a0ee95ddbe3352c10dac41d7ff1ad85530fb24951b27a39e5398db4
+"react@npm:19.1.1, react@npm:^19.1.1":
+  version: 19.1.1
+  resolution: "react@npm:19.1.1"
+  checksum: 10/9801530fdc939e1a7a499422e930515b2400809cb39c2872984e99f832d233f61659a693871183dac3155c2f9b2c9dcf4440a56bd18983277ae92860e38c3a61
   languageName: node
   linkType: hard
 
@@ -10476,7 +10476,7 @@ __metadata:
     "@hookform/resolvers": "npm:^5.2.1"
     "@radix-ui/react-slot": "npm:^1.2.3"
     "@types/node": "npm:^24.3.0"
-    "@types/react": "npm:^19.1.8"
+    "@types/react": "npm:^19.1.11"
     "@types/react-dom": "npm:^19.1.6"
     autoprefixer: "npm:^10.4.21"
     class-variance-authority: "npm:^0.7.1"
@@ -10484,7 +10484,7 @@ __metadata:
     eslint-config-custom: "npm:*"
     lucide-react: "npm:^0.539.0"
     postcss: "npm:^8.5.6"
-    react: "npm:^19.1.0"
+    react: "npm:^19.1.1"
     react-hook-form: "npm:^7.62.0"
     recharts: "npm:^3.1.2"
     tailwind-merge: "npm:^3.3.1"
@@ -10918,7 +10918,7 @@ __metadata:
   dependencies:
     eslint-config-custom: "npm:*"
     next: "npm:15.4.6"
-    react: "npm:19.1.0"
+    react: "npm:19.1.1"
     react-dom: "npm:19.1.0"
     tsconfig: "npm:*"
     ui: "npm:*"
