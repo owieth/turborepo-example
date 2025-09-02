@@ -3571,7 +3571,7 @@ __metadata:
   dependencies:
     eslint-config-custom: "npm:*"
     next: "npm:15.5.2"
-    nextra: "npm:^4.3.0"
+    nextra: "npm:^4.4.0"
     nextra-theme-docs: "npm:^4.4.0"
     react: "npm:19.1.1"
     react-dom: "npm:19.1.0"
@@ -7596,9 +7596,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nextra@npm:^4.3.0":
-  version: 4.3.0
-  resolution: "nextra@npm:4.3.0"
+"nextra@npm:^4.4.0":
+  version: 4.4.0
+  resolution: "nextra@npm:4.4.0"
   dependencies:
     "@formatjs/intl-localematcher": "npm:^0.6.0"
     "@headlessui/react": "npm:^2.1.2"
@@ -7643,7 +7643,7 @@ __metadata:
     next: ">=14"
     react: ">=18"
     react-dom: ">=18"
-  checksum: 10/378e1aedbd90f36496cb413a530a3f01fb66f1bc32999e8382abe00a6fa79f0ea2125802f624a0b7f84bdd542677f1b8b25247039ee78d0f3be1dbf2f32a8748
+  checksum: 10/dc288d3d58b183cad4e8e33b81db7a2c9a668ac87f2a0db09a4376120b2e254f9878b1dacebc996c8e7b23301a296758a1f6f3d40478fad57da298c25e98e970
   languageName: node
   linkType: hard
 
