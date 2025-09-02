@@ -10492,7 +10492,7 @@ __metadata:
     tailwindcss-animate: "npm:^1.0.6"
     tsconfig: "npm:*"
     typescript: "npm:5.9.2"
-    zod: "npm:^3.25.65"
+    zod: "npm:^4.1.5"
   languageName: unknown
   linkType: soft
 
@@ -11100,10 +11100,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"zod@npm:^3.25.65":
-  version: 3.25.65
-  resolution: "zod@npm:3.25.65"
-  checksum: 10/75ec5aa0d41d116ec70b5eb09b2ee484bbb1d0db773e19f745d5ff15a030710fc33ddbc72573a14edb22df765ec68b04a9302512b5b95efd0cf82cc6aa05eaeb
+"zod@npm:^4.1.5":
+  version: 4.1.5
+  resolution: "zod@npm:4.1.5"
+  checksum: 10/2ac6bef2d6647de6e673b6fa07ee392b71eb6fd6ccb2be8899d8d853084dd8b3992d4d2cf267eba6f8495a35803e2ec254509194fd0849ed0a822dea7ae4a765
   languageName: node
   linkType: hard
 
