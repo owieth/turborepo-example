@@ -9,7 +9,7 @@
   "devDependencies": {
     "@types/node": "^24.3.0",
     "@types/react": "^19.1.12",
-    "@types/react-dom": "^19.1.6",
+    "@types/react-dom": "^19.1.9",
     "autoprefixer": "^10.4.21",
     "eslint-config-custom": "*",
     "postcss": "^8.5.6",
