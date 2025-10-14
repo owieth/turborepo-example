@@ -1720,12 +1720,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:^19.1.9":
-  version: 19.1.9
-  resolution: "@types/react-dom@npm:19.1.9"
+"@types/react-dom@npm:^19.2.2":
+  version: 19.2.2
+  resolution: "@types/react-dom@npm:19.2.2"
   peerDependencies:
-    "@types/react": ^19.0.0
-  checksum: 10/207acb79f6c3c9704938138960e21429efdf2db2184f17c166e8ec3f3180dfe6445b282c5302f559a71b2d09ab2fafef7735f3d24fd01cda4e5c7bf0cea1d5b9
+    "@types/react": ^19.2.0
+  checksum: 10/73d5671e57ab73cb3f2acd7992faee8f90d5b4d155b972e76e91fa13e5871ebb5e224960b05039d57ea502cb3370746eb98beda5fa44e9712b4aee52653c237a
   languageName: node
   linkType: hard
 
@@ -3587,7 +3587,7 @@ __metadata:
     nextra: "npm:^4.6.0"
     nextra-theme-docs: "npm:^4.4.0"
     react: "npm:19.2.0"
-    react-dom: "npm:19.1.1"
+    react-dom: "npm:19.2.0"
     tsconfig: "npm:*"
     ui: "npm:*"
   languageName: unknown
@@ -8532,14 +8532,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-dom@npm:19.1.1":
-  version: 19.1.1
-  resolution: "react-dom@npm:19.1.1"
+"react-dom@npm:19.2.0":
+  version: 19.2.0
+  resolution: "react-dom@npm:19.2.0"
   dependencies:
-    scheduler: "npm:^0.26.0"
+    scheduler: "npm:^0.27.0"
   peerDependencies:
-    react: ^19.1.1
-  checksum: 10/9005415d2175b1f1eb4a544ad04afb29691bb7b6dd43bbdaa09932146b310b73bd4552bc772ad78fa481f409eada1560cf887606c83c1a53a922c1e30f1b3a34
+    react: ^19.2.0
+  checksum: 10/3dbba071b9b1e7a19eae55f05c100f6b44f88c0aee72397d719ae338248ca66ed5028e6964c1c14870cc3e1abcecc91b22baba6dc2072f819dea81a9fd72f2fd
   languageName: node
   linkType: hard
 
@@ -9260,10 +9260,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"scheduler@npm:^0.26.0":
-  version: 0.26.0
-  resolution: "scheduler@npm:0.26.0"
-  checksum: 10/1ecf2e5d7de1a7a132796834afe14a2d589ba7e437615bd8c06f3e0786a3ac3434655e67aac8755d9b14e05754c177e49c064261de2673aaa3c926bc98caa002
+"scheduler@npm:^0.27.0":
+  version: 0.27.0
+  resolution: "scheduler@npm:0.27.0"
+  checksum: 10/eab3c3a8373195173e59c147224fc30dabe6dd453f248f5e610e8458512a5a2ee3a06465dc400ebfe6d35c9f5b7f3bb6b2e41c88c86fd177c25a73e7286a1e06
   languageName: node
   linkType: hard
 
@@ -10519,7 +10519,7 @@ __metadata:
     "@radix-ui/react-slot": "npm:^1.2.3"
     "@types/node": "npm:^24.5.2"
     "@types/react": "npm:^19.2.2"
-    "@types/react-dom": "npm:^19.1.9"
+    "@types/react-dom": "npm:^19.2.2"
     autoprefixer: "npm:^10.4.21"
     class-variance-authority: "npm:^0.7.1"
     clsx: "npm:^2.1.1"
@@ -10961,7 +10961,7 @@ __metadata:
     eslint-config-custom: "npm:*"
     next: "npm:15.5.5"
     react: "npm:19.2.0"
-    react-dom: "npm:19.1.1"
+    react-dom: "npm:19.2.0"
     tsconfig: "npm:*"
     ui: "npm:*"
   languageName: unknown
