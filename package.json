@@ -14,7 +14,7 @@
     "eslint": "^9.37.0",
     "eslint-config-custom": "*",
     "prettier": "^3.6.2",
-    "prettier-plugin-tailwindcss": "^0.6.14",
+    "prettier-plugin-tailwindcss": "^0.7.1",
     "syncpack": "^13.0.4",
     "turbo": "^2.5.8"
   },
