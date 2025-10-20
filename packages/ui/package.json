@@ -25,9 +25,9 @@
     "clsx": "^2.1.1",
     "lucide-react": "^0.545.0",
     "react-hook-form": "^7.65.0",
-    "recharts": "^3.2.1",
+    "recharts": "^3.3.0",
     "tailwind-merge": "^3.3.1",
     "tailwindcss-animate": "^1.0.6",
-    "zod": "^4.1.11"
+    "zod": "^4.1.12"
   }
 }
