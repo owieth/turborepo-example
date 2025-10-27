@@ -9,9 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "15.5.5",
+    "next": "16.0.0",
     "nextra": "^4.6.0",
-    "nextra-theme-docs": "^4.4.0",
+    "nextra-theme-docs": "^4.6.0",
     "react": "19.2.0",
     "react-dom": "19.2.0",
     "ui": "*"
