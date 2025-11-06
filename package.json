@@ -10,15 +10,15 @@
     "prettier": "prettier --write --ignore-path .gitignore ."
   },
   "devDependencies": {
-    "@turbo/gen": "^2.5.8",
-    "eslint": "^9.38.0",
+    "@turbo/gen": "^2.6.0",
+    "eslint": "^9.39.1",
     "eslint-config-custom": "*",
     "prettier": "^3.6.2",
     "prettier-plugin-tailwindcss": "^0.7.1",
     "syncpack": "^13.0.4",
     "turbo": "^2.5.8"
   },
-  "packageManager": "yarn@4.3.1",
+  "packageManager": "yarn@4.10.3",
   "workspaces": [
     "apps/*",
     "packages/*"
