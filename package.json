@@ -16,7 +16,7 @@
     "prettier": "^3.6.2",
     "prettier-plugin-tailwindcss": "^0.7.1",
     "syncpack": "^13.0.4",
-    "turbo": "^2.5.8"
+    "turbo": "^2.6.1"
   },
   "packageManager": "yarn@4.10.3",
   "workspaces": [
