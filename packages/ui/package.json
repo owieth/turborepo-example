@@ -28,6 +28,6 @@
     "recharts": "^3.4.1",
     "tailwind-merge": "^3.4.0",
     "tailwindcss-animate": "^1.0.6",
-    "zod": "^4.1.12"
+    "zod": "^4.1.13"
   }
 }
