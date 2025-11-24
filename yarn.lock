@@ -6523,12 +6523,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lucide-react@npm:^0.553.0":
-  version: 0.553.0
-  resolution: "lucide-react@npm:0.553.0"
+"lucide-react@npm:^0.554.0":
+  version: 0.554.0
+  resolution: "lucide-react@npm:0.554.0"
   peerDependencies:
     react: ^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0
-  checksum: 10/741826c0b45b22213b902b5ff8236b226e9dd66403be45ac5e41fc448484ad6550bc39f8eb454dd0efcad2a2b4271b3eec8489493b6e42b96e39482f6abc64c4
+  checksum: 10/3f21ca482ca0b73ae30da06675c2f064c27f0ba165e55a064318443a6d92c6affc8b6ffefc94a8d082d27aaaf34f45df281ca21087d58c2361f7cfae16daba08
   languageName: node
   linkType: hard
 
@@ -10326,7 +10326,7 @@ __metadata:
     class-variance-authority: "npm:^0.7.1"
     clsx: "npm:^2.1.1"
     eslint-config-custom: "npm:*"
-    lucide-react: "npm:^0.553.0"
+    lucide-react: "npm:^0.554.0"
     postcss: "npm:^8.5.6"
     react: "npm:^19.2.0"
     react-hook-form: "npm:^7.65.0"
