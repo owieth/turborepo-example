@@ -8348,12 +8348,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:^3.6.2":
-  version: 3.6.2
-  resolution: "prettier@npm:3.6.2"
+"prettier@npm:^3.7.3":
+  version: 3.7.3
+  resolution: "prettier@npm:3.7.3"
   bin:
     prettier: bin/prettier.cjs
-  checksum: 10/1213691706bcef1371d16ef72773c8111106c3533b660b1cc8ec158bd109cdf1462804125f87f981f23c4a3dba053b6efafda30ab0114cc5b4a725606bb9ff26
+  checksum: 10/f83ca7e3c69717c1e2f7a95af2d9700eea520c235dfc0f94727a550a4bf0f14eda956a9b2682991b4f1da4605247b3cd3c5547bf2ada4a3ca718bc9ca230040a
   languageName: node
   linkType: hard
 
@@ -10177,7 +10177,7 @@ __metadata:
     "@turbo/gen": "npm:^2.6.1"
     eslint: "npm:^9.39.1"
     eslint-config-custom: "npm:*"
-    prettier: "npm:^3.6.2"
+    prettier: "npm:^3.7.3"
     prettier-plugin-tailwindcss: "npm:^0.7.1"
     syncpack: "npm:^13.0.4"
     turbo: "npm:^2.6.1"
@@ -10330,8 +10330,8 @@ __metadata:
     "@hookform/resolvers": "npm:^5.2.2"
     "@radix-ui/react-slot": "npm:^1.2.3"
     "@types/node": "npm:^24.10.1"
-    "@types/react-dom": "npm:^19.2.3"
     "@types/react": "npm:^19.2.7"
+    "@types/react-dom": "npm:^19.2.3"
     autoprefixer: "npm:^10.4.22"
     class-variance-authority: "npm:^0.7.1"
     clsx: "npm:^2.1.1"
