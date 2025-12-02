@@ -8281,9 +8281,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier-plugin-tailwindcss@npm:^0.7.1":
-  version: 0.7.1
-  resolution: "prettier-plugin-tailwindcss@npm:0.7.1"
+"prettier-plugin-tailwindcss@npm:^0.7.2":
+  version: 0.7.2
+  resolution: "prettier-plugin-tailwindcss@npm:0.7.2"
   peerDependencies:
     "@ianvs/prettier-plugin-sort-imports": "*"
     "@prettier/plugin-hermes": "*"
@@ -8335,7 +8335,7 @@ __metadata:
       optional: true
     prettier-plugin-svelte:
       optional: true
-  checksum: 10/bb5788f4383754ab0bc83a2de28307388e857d4f502290251c9d7126c9760e99a5bfacc375f027c9ae546c3146350c9c83d2c700b60b513e591cdba15c078406
+  checksum: 10/c77253025d62555e761b0a76df6e5c73d48d96a259ac157de9c21f11a7851fd2b434c27b296b119530895a57fe87c8cf337b0df0bff97b2bc1a0d48a442b0d99
   languageName: node
   linkType: hard
 
@@ -10168,7 +10168,7 @@ __metadata:
     eslint: "npm:^9.39.1"
     eslint-config-custom: "npm:*"
     prettier: "npm:^3.7.3"
-    prettier-plugin-tailwindcss: "npm:^0.7.1"
+    prettier-plugin-tailwindcss: "npm:^0.7.2"
     syncpack: "npm:^13.0.4"
     turbo: "npm:^2.6.1"
   languageName: unknown
