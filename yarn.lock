@@ -3878,7 +3878,7 @@ __metadata:
     nextra: "npm:^4.6.0"
     nextra-theme-docs: "npm:^4.6.0"
     react: "npm:19.2.1"
-    react-dom: "npm:19.2.0"
+    react-dom: "npm:19.2.1"
     tsconfig: "npm:*"
     ui: "npm:*"
   languageName: unknown
@@ -8464,14 +8464,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-dom@npm:19.2.0":
-  version: 19.2.0
-  resolution: "react-dom@npm:19.2.0"
+"react-dom@npm:19.2.1":
+  version: 19.2.1
+  resolution: "react-dom@npm:19.2.1"
   dependencies:
     scheduler: "npm:^0.27.0"
   peerDependencies:
-    react: ^19.2.0
-  checksum: 10/3dbba071b9b1e7a19eae55f05c100f6b44f88c0aee72397d719ae338248ca66ed5028e6964c1c14870cc3e1abcecc91b22baba6dc2072f819dea81a9fd72f2fd
+    react: ^19.2.1
+  checksum: 10/cceea7104bd3ad52e2f6377f47c4b346244c1263917fd95745e31647ff8ab23b16f719c2bfc8bcf2a6c802ecb9c9e81f08b09e3447e1f49bc27368283ed299ba
   languageName: node
   linkType: hard
 
@@ -10811,7 +10811,7 @@ __metadata:
     eslint-config-custom: "npm:*"
     next: "npm:16.0.7"
     react: "npm:19.2.1"
-    react-dom: "npm:19.2.0"
+    react-dom: "npm:19.2.1"
     tsconfig: "npm:*"
     ui: "npm:*"
   languageName: unknown
