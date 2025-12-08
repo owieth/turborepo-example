@@ -10,7 +10,7 @@
     "prettier": "prettier --write --ignore-path .gitignore ."
   },
   "devDependencies": {
-    "@turbo/gen": "^2.6.1",
+    "@turbo/gen": "^2.6.3",
     "eslint": "^9.39.1",
     "eslint-config-custom": "*",
     "prettier": "^3.7.3",
