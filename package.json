@@ -10,7 +10,7 @@
     "prettier": "prettier --write --ignore-path .gitignore ."
   },
   "dependencies": {
-    "next": "16.0.9"
+    "next": "16.0.10"
   },
   "devDependencies": {
     "@turbo/gen": "^2.6.3",
