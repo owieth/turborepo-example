@@ -3874,7 +3874,6 @@ __metadata:
   resolution: "docs@workspace:apps/docs"
   dependencies:
     eslint-config-custom: "npm:*"
-    next: "npm:16.0.9"
     nextra: "npm:^4.6.0"
     nextra-theme-docs: "npm:^4.6.0"
     react: "npm:19.2.1"
@@ -10167,6 +10166,7 @@ __metadata:
     "@turbo/gen": "npm:^2.6.3"
     eslint: "npm:^9.39.1"
     eslint-config-custom: "npm:*"
+    next: "npm:16.0.9"
     prettier: "npm:^3.7.3"
     prettier-plugin-tailwindcss: "npm:^0.7.2"
     syncpack: "npm:^13.0.4"
@@ -10809,7 +10809,6 @@ __metadata:
   resolution: "web@workspace:apps/web"
   dependencies:
     eslint-config-custom: "npm:*"
-    next: "npm:16.0.9"
     react: "npm:19.2.1"
     react-dom: "npm:19.2.1"
     tsconfig: "npm:*"

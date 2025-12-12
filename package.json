@@ -9,6 +9,9 @@
     "clean": "turbo clean",
     "prettier": "prettier --write --ignore-path .gitignore ."
   },
+  "dependencies": {
+    "next": "16.0.9"
+  },
   "devDependencies": {
     "@turbo/gen": "^2.6.3",
     "eslint": "^9.39.1",
