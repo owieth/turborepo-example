@@ -9868,10 +9868,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tailwindcss@npm:^4.1.17":
-  version: 4.1.17
-  resolution: "tailwindcss@npm:4.1.17"
-  checksum: 10/c0616126f706745cfad652da64dd4485f075d4799303790a361ffdc38b663d830f16375280c5de5fb0e04ada17eaa63b7e1c31776939f3bef922ffe59d704033
+"tailwindcss@npm:^4.1.18":
+  version: 4.1.18
+  resolution: "tailwindcss@npm:4.1.18"
+  checksum: 10/16a51bf972dce3871fec66aba7bffa02cd6fccc5a330180be3dcf297e48aae2d64d965df48fda851f65924ef61d7d2c6c8e6d7a05a09f454244475b7dab93464
   languageName: node
   linkType: hard
 
@@ -10332,7 +10332,7 @@ __metadata:
     react-hook-form: "npm:^7.66.1"
     recharts: "npm:^3.5.1"
     tailwind-merge: "npm:^3.4.0"
-    tailwindcss: "npm:^4.1.17"
+    tailwindcss: "npm:^4.1.18"
     tailwindcss-animate: "npm:^1.0.6"
     tsconfig: "npm:*"
     typescript: "npm:5.9.3"
