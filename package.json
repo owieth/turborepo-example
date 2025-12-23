@@ -19,7 +19,7 @@
     "prettier": "^3.7.3",
     "prettier-plugin-tailwindcss": "^0.7.2",
     "syncpack": "^13.0.4",
-    "turbo": "^2.6.3"
+    "turbo": "^2.7.1"
   },
   "packageManager": "yarn@4.10.3",
   "workspaces": [
