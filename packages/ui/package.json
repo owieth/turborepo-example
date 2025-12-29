@@ -7,7 +7,7 @@
     "ui:add": "pnpm dlx shadcn-ui@latest add"
   },
   "devDependencies": {
-    "@types/node": "^24.10.1",
+    "@types/node": "^25.0.3",
     "@types/react": "^19.2.7",
     "@types/react-dom": "^19.2.3",
     "autoprefixer": "^10.4.22",
@@ -27,7 +27,7 @@
     "react-hook-form": "^7.69.0",
     "recharts": "^3.6.0",
     "tailwind-merge": "^3.4.0",
-    "tailwindcss-animate": "^1.0.6",
+    "tailwindcss-animate": "^1.0.7",
     "zod": "^4.2.1"
   }
 }
