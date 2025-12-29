@@ -4017,8 +4017,6 @@ __metadata:
     eslint-config-custom: "npm:*"
     nextra: "npm:^4.6.1"
     nextra-theme-docs: "npm:^4.6.1"
-    react: "npm:19.2.3"
-    react-dom: "npm:19.2.3"
     tsconfig: "npm:*"
     ui: "npm:*"
   languageName: unknown
