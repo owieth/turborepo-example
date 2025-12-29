@@ -2292,13 +2292,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@zod/core@npm:0.9.0":
-  version: 0.9.0
-  resolution: "@zod/core@npm:0.9.0"
-  checksum: 10/c85bff0614c7da90bc8ca7a7a67d466853c30899976131f1dcb0ced091a12a282db9c67061d6ff12b7057bfb6b240988ff9e5398e0cec0baa66ba0b79d0f5c5c
-  languageName: node
-  linkType: hard
-
 "acorn-jsx@npm:^5.0.0, acorn-jsx@npm:^5.3.2":
   version: 5.3.2
   resolution: "acorn-jsx@npm:5.3.2"
@@ -3870,7 +3863,7 @@ __metadata:
   resolution: "docs@workspace:apps/docs"
   dependencies:
     eslint-config-custom: "npm:*"
-    nextra: "npm:^4.6.0"
+    nextra: "npm:^4.6.1"
     nextra-theme-docs: "npm:^4.6.1"
     react: "npm:19.2.3"
     react-dom: "npm:19.2.3"
@@ -7610,9 +7603,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nextra@npm:^4.6.0":
-  version: 4.6.0
-  resolution: "nextra@npm:4.6.0"
+"nextra@npm:^4.6.1":
+  version: 4.6.1
+  resolution: "nextra@npm:4.6.1"
   dependencies:
     "@formatjs/intl-localematcher": "npm:^0.6.0"
     "@headlessui/react": "npm:^2.1.2"
@@ -7652,12 +7645,12 @@ __metadata:
     unist-util-visit: "npm:^5.0.0"
     unist-util-visit-children: "npm:^3.0.0"
     yaml: "npm:^2.3.2"
-    zod: "npm:4.0.0-beta.20250424T163858"
+    zod: "npm:^4.1.12"
   peerDependencies:
     next: ">=14"
     react: ">=18"
     react-dom: ">=18"
-  checksum: 10/480baa22b6cd52c3dee200f88be11e5427b9c2a8f64808db039b8ea5607ffafc6ebe75a1ada83d5f9832d7816868e524fa8e61afb9bdc09d7c41c029bf9d57b4
+  checksum: 10/e143bc141e8fecf7cceeecf60deceb7b3b36fd133b427582526210c2f1ae50c8a6267987555a121375b53ece4a45a6c93ff725c65c0ba949dd9545b4a08f1e6e
   languageName: node
   linkType: hard
 
@@ -10977,15 +10970,6 @@ __metadata:
   peerDependencies:
     zod: ^3.25.0 || ^4.0.0
   checksum: 10/5e35ca8ebb4602dcb526e122d7e9fca695c4a479bd97535f3400a732d49160f24f7213a9ed64986fc9dc3a2e8a6c4e1241ec0c4d8a4e3e69ea91a0328ded2192
-  languageName: node
-  linkType: hard
-
-"zod@npm:4.0.0-beta.20250424T163858":
-  version: 4.0.0-beta.20250424T163858
-  resolution: "zod@npm:4.0.0-beta.20250424T163858"
-  dependencies:
-    "@zod/core": "npm:0.9.0"
-  checksum: 10/41c13a60c38a6ecbd3ac116061e45464a8b71240087e768bb86abb07b49adebfd9ae8f96aa21d2cb18664f3df1bc3131d9cbaf3e5abf3e53b358ca5bd74f790e
   languageName: node
   linkType: hard
 
