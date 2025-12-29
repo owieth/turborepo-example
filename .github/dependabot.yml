@@ -9,6 +9,19 @@ updates:
     directory: '/' # Location of package manifests
     schedule:
       interval: 'weekly'
+    groups:
+      nextra:
+        patterns:
+          - 'nextra'
+          - 'nextra-theme-docs'
+      nextjs:
+        patterns:
+          - 'next'
+          - 'eslint-config-next'
+      react:
+        patterns:
+          - 'react'
+          - 'react-dom'
 
   - package-ecosystem: 'github-actions' # See documentation for possible values
     directory: '/' # Location of package manifests
