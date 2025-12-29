@@ -10138,15 +10138,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tailwindcss-animate@npm:^1.0.7":
-  version: 1.0.7
-  resolution: "tailwindcss-animate@npm:1.0.7"
-  peerDependencies:
-    tailwindcss: "*"
-  checksum: 10/ef176fbb0bf9dca84178b35b6a9615cd756358ea80be9c575456d12ecd7f3c431e9e571915c7df72959dc798a730959e9a4739d59eab55d8cc6db390870ff0d2
-  languageName: node
-  linkType: hard
-
 "tailwindcss@npm:4.1.18, tailwindcss@npm:^4.1.18":
   version: 4.1.18
   resolution: "tailwindcss@npm:4.1.18"
@@ -10458,6 +10449,13 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"tw-animate-css@npm:^1.4.0":
+  version: 1.4.0
+  resolution: "tw-animate-css@npm:1.4.0"
+  checksum: 10/9d46c71b624bc7f9cf7a91c0ab3a04cfb22ba605a690961eea35689e368a8721add12815f59aa0fbf7092374acb24552f281351a83bf8b25414c52f4888f94ad
+  languageName: node
+  linkType: hard
+
 "twoslash-protocol@npm:0.3.4":
   version: 0.3.4
   resolution: "twoslash-protocol@npm:0.3.4"
@@ -10617,8 +10615,8 @@ __metadata:
     recharts: "npm:^3.6.0"
     tailwind-merge: "npm:^3.4.0"
     tailwindcss: "npm:^4.1.18"
-    tailwindcss-animate: "npm:^1.0.7"
     tsconfig: "npm:*"
+    tw-animate-css: "npm:^1.4.0"
     typescript: "npm:5.9.3"
     zod: "npm:^4.2.1"
   languageName: unknown
