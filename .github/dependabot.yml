@@ -22,6 +22,11 @@ updates:
         patterns:
           - 'react'
           - 'react-dom'
+      turbo:
+        patterns:
+          - 'turbo'
+          - '@turbo/gen'
+          - 'eslint-config-turbo'
 
   - package-ecosystem: 'github-actions' # See documentation for possible values
     directory: '/' # Location of package manifests
