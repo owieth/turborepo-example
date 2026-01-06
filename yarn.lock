@@ -10605,7 +10605,7 @@ __metadata:
     tsconfig: "npm:*"
     tw-animate-css: "npm:^1.4.0"
     typescript: "npm:5.9.3"
-    zod: "npm:^4.2.1"
+    zod: "npm:^4.3.5"
   languageName: unknown
   linkType: soft
 
@@ -11244,10 +11244,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"zod@npm:^4.1.12, zod@npm:^4.2.1":
+"zod@npm:^4.1.12":
   version: 4.2.1
   resolution: "zod@npm:4.2.1"
   checksum: 10/f21d106ce31e0f24040aa13b13fdd1300fcc8119622b28ca1b1b726ff70b75190dbcfeb927d34f19174683afa298e5df4d806f622abe9b037a0aadb9cdef6443
+  languageName: node
+  linkType: hard
+
+"zod@npm:^4.3.5":
+  version: 4.3.5
+  resolution: "zod@npm:4.3.5"
+  checksum: 10/3148bd52e56ab7c1641ec397e6be6eddbb1d8f5db71e95baab9bb9622a0ea49d8a385885fc1c22b90fa6d8c5234e051f4ef5d469cfe3fb90198d5a91402fd89c
   languageName: node
   linkType: hard
 
