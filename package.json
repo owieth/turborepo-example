@@ -13,13 +13,13 @@
     "next": "16.1.1"
   },
   "devDependencies": {
-    "@turbo/gen": "^2.7.3",
+    "@turbo/gen": "^2.7.4",
     "eslint": "^9.39.2",
     "eslint-config-custom": "*",
     "prettier": "^3.7.4",
     "prettier-plugin-tailwindcss": "^0.7.2",
     "syncpack": "^13.0.4",
-    "turbo": "^2.7.3"
+    "turbo": "^2.7.4"
   },
   "packageManager": "yarn@4.10.3",
   "workspaces": [
