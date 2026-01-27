@@ -1672,11 +1672,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@turbo/gen@npm:^2.7.5":
-  version: 2.7.5
-  resolution: "@turbo/gen@npm:2.7.5"
+"@turbo/gen@npm:^2.7.6":
+  version: 2.7.6
+  resolution: "@turbo/gen@npm:2.7.6"
   dependencies:
-    "@turbo/workspaces": "npm:2.7.5"
+    "@turbo/workspaces": "npm:2.7.6"
     commander: "npm:10.0.0"
     fs-extra: "npm:10.1.0"
     inquirer: "npm:8.2.4"
@@ -1689,13 +1689,13 @@ __metadata:
     validate-npm-package-name: "npm:5.0.0"
   bin:
     gen: dist/cli.js
-  checksum: 10/32218a3549b0d2f9e46550b7e80144c6625ca28e1524ed4e85bf19387b83b042125aedb85a2d3463738cfe5ded2fe0f268d891a0a28a9628ba365e462ab30993
+  checksum: 10/6422420a974595f7715855bfe837dda6fd7234b5b343956fe0b349e19a7aa80b72cf7708599a86fea50be9fe16892d640e4d3beb4a0cb85e668cbe6d5095ff6e
   languageName: node
   linkType: hard
 
-"@turbo/workspaces@npm:2.7.5":
-  version: 2.7.5
-  resolution: "@turbo/workspaces@npm:2.7.5"
+"@turbo/workspaces@npm:2.7.6":
+  version: 2.7.6
+  resolution: "@turbo/workspaces@npm:2.7.6"
   dependencies:
     commander: "npm:10.0.0"
     execa: "npm:5.1.1"
@@ -1710,7 +1710,7 @@ __metadata:
     update-check: "npm:1.5.4"
   bin:
     workspaces: dist/cli.js
-  checksum: 10/25ed3a5399b2d7bcb4aad27a0597e23b5178f191c94193439c7bebb4afebf0849b2c7126651d8815827f8f9b3e22654509adeb5ea139cb8a8ae3e9a3851560eb
+  checksum: 10/484b1df42149d72d0e998c0e63f5f22b62ce2f7acb579f99e9f35ee180b904ad30389b51674d018303dfa230ec8862b218d404bdfa496daa579c7becb14a4133
   languageName: node
   linkType: hard
 
@@ -4380,7 +4380,7 @@ __metadata:
   dependencies:
     eslint-config-next: "npm:^16.1.5"
     eslint-config-prettier: "npm:^10.1.8"
-    eslint-config-turbo: "npm:^2.7.5"
+    eslint-config-turbo: "npm:^2.7.6"
     eslint-plugin-react: "npm:7.37.5"
   languageName: unknown
   linkType: soft
@@ -4419,15 +4419,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-turbo@npm:^2.7.5":
-  version: 2.7.5
-  resolution: "eslint-config-turbo@npm:2.7.5"
+"eslint-config-turbo@npm:^2.7.6":
+  version: 2.7.6
+  resolution: "eslint-config-turbo@npm:2.7.6"
   dependencies:
-    eslint-plugin-turbo: "npm:2.7.5"
+    eslint-plugin-turbo: "npm:2.7.6"
   peerDependencies:
     eslint: ">6.6.0"
     turbo: ">2.0.0"
-  checksum: 10/8027f5d82e32dd268d2f827956941853074f86832623a46f7deabf879cc6e18f33bfdef83da7d7a2914c0b3bae008517fc8ed0d789d00b0486f7b25af6140ba0
+  checksum: 10/a10b49d15e9901a2346d1fbcb40b68c2b8989519e13b6e36cb30d1590545cb9cc5e214fcfefdfe51342885c8b694aa1fb844ba058eab0a0f6c22e01b66107db5
   languageName: node
   linkType: hard
 
@@ -4575,15 +4575,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-turbo@npm:2.7.5":
-  version: 2.7.5
-  resolution: "eslint-plugin-turbo@npm:2.7.5"
+"eslint-plugin-turbo@npm:2.7.6":
+  version: 2.7.6
+  resolution: "eslint-plugin-turbo@npm:2.7.6"
   dependencies:
     dotenv: "npm:16.0.3"
   peerDependencies:
     eslint: ">6.6.0"
     turbo: ">2.0.0"
-  checksum: 10/a2874ca6142e98c8b15d669f5a31ff67cb54e3e0463af84ea05c17591894f6cf128daff3ea80a662cc09e3d958fe4b3b214e0633ec342352f4f0f24a79039427
+  checksum: 10/3396180d93a6651de1642e2ed3f69977771924f9afad882c464f9ebe16081a948544986e2e756ba9abf34cddfbc20c7581ead0494db360a402859e08dc2b69bb
   languageName: node
   linkType: hard
 
@@ -10350,58 +10350,58 @@ __metadata:
   languageName: node
   linkType: hard
 
-"turbo-darwin-64@npm:2.7.5":
-  version: 2.7.5
-  resolution: "turbo-darwin-64@npm:2.7.5"
+"turbo-darwin-64@npm:2.7.6":
+  version: 2.7.6
+  resolution: "turbo-darwin-64@npm:2.7.6"
   conditions: os=darwin & cpu=x64
   languageName: node
   linkType: hard
 
-"turbo-darwin-arm64@npm:2.7.5":
-  version: 2.7.5
-  resolution: "turbo-darwin-arm64@npm:2.7.5"
+"turbo-darwin-arm64@npm:2.7.6":
+  version: 2.7.6
+  resolution: "turbo-darwin-arm64@npm:2.7.6"
   conditions: os=darwin & cpu=arm64
   languageName: node
   linkType: hard
 
-"turbo-linux-64@npm:2.7.5":
-  version: 2.7.5
-  resolution: "turbo-linux-64@npm:2.7.5"
+"turbo-linux-64@npm:2.7.6":
+  version: 2.7.6
+  resolution: "turbo-linux-64@npm:2.7.6"
   conditions: os=linux & cpu=x64
   languageName: node
   linkType: hard
 
-"turbo-linux-arm64@npm:2.7.5":
-  version: 2.7.5
-  resolution: "turbo-linux-arm64@npm:2.7.5"
+"turbo-linux-arm64@npm:2.7.6":
+  version: 2.7.6
+  resolution: "turbo-linux-arm64@npm:2.7.6"
   conditions: os=linux & cpu=arm64
   languageName: node
   linkType: hard
 
-"turbo-windows-64@npm:2.7.5":
-  version: 2.7.5
-  resolution: "turbo-windows-64@npm:2.7.5"
+"turbo-windows-64@npm:2.7.6":
+  version: 2.7.6
+  resolution: "turbo-windows-64@npm:2.7.6"
   conditions: os=win32 & cpu=x64
   languageName: node
   linkType: hard
 
-"turbo-windows-arm64@npm:2.7.5":
-  version: 2.7.5
-  resolution: "turbo-windows-arm64@npm:2.7.5"
+"turbo-windows-arm64@npm:2.7.6":
+  version: 2.7.6
+  resolution: "turbo-windows-arm64@npm:2.7.6"
   conditions: os=win32 & cpu=arm64
   languageName: node
   linkType: hard
 
-"turbo@npm:^2.7.5":
-  version: 2.7.5
-  resolution: "turbo@npm:2.7.5"
+"turbo@npm:^2.7.6":
+  version: 2.7.6
+  resolution: "turbo@npm:2.7.6"
   dependencies:
-    turbo-darwin-64: "npm:2.7.5"
-    turbo-darwin-arm64: "npm:2.7.5"
-    turbo-linux-64: "npm:2.7.5"
-    turbo-linux-arm64: "npm:2.7.5"
-    turbo-windows-64: "npm:2.7.5"
-    turbo-windows-arm64: "npm:2.7.5"
+    turbo-darwin-64: "npm:2.7.6"
+    turbo-darwin-arm64: "npm:2.7.6"
+    turbo-linux-64: "npm:2.7.6"
+    turbo-linux-arm64: "npm:2.7.6"
+    turbo-windows-64: "npm:2.7.6"
+    turbo-windows-arm64: "npm:2.7.6"
   dependenciesMeta:
     turbo-darwin-64:
       optional: true
@@ -10417,7 +10417,7 @@ __metadata:
       optional: true
   bin:
     turbo: bin/turbo
-  checksum: 10/fe9c2c8c55242ae102bf30494f8830749fc91c0fade85a2ad376eb3df0d5aa3452f222dbf080f852f2f8a2197fec3b607e0cec63fae096f48b5fff2228caaff6
+  checksum: 10/88dd2f3bedf238f8f2d55416cd77179d9708a283528a4d3d9752c950e08c8bbfd81e8fe05837426891f02eb8574da07385d84ef75769f2a71ba41b2e26f5f3a6
   languageName: node
   linkType: hard
 
@@ -10425,14 +10425,14 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "turborepo-example@workspace:."
   dependencies:
-    "@turbo/gen": "npm:^2.7.5"
+    "@turbo/gen": "npm:^2.7.6"
     eslint: "npm:^9.39.2"
     eslint-config-custom: "npm:*"
     next: "npm:16.1.5"
     prettier: "npm:^3.7.4"
     prettier-plugin-tailwindcss: "npm:^0.7.2"
     syncpack: "npm:^13.0.4"
-    turbo: "npm:^2.7.5"
+    turbo: "npm:^2.7.6"
   languageName: unknown
   linkType: soft
 
