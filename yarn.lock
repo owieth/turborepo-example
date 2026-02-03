@@ -756,6 +756,21 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@inquirer/external-editor@npm:^1.0.0":
+  version: 1.0.3
+  resolution: "@inquirer/external-editor@npm:1.0.3"
+  dependencies:
+    chardet: "npm:^2.1.1"
+    iconv-lite: "npm:^0.7.0"
+  peerDependencies:
+    "@types/node": ">=18"
+  peerDependenciesMeta:
+    "@types/node":
+      optional: true
+  checksum: 10/c95d7237a885b32031715089f92820525731d4d3c2bd7afdb826307dc296cc2b39e7a644b0bb265441963348cca42e7785feb29c3aaf18fd2b63131769bf6587
+  languageName: node
+  linkType: hard
+
 "@isaacs/balanced-match@npm:^4.0.1":
   version: 4.0.1
   resolution: "@isaacs/balanced-match@npm:4.0.1"
@@ -1672,14 +1687,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@turbo/gen@npm:^2.7.6":
-  version: 2.7.6
-  resolution: "@turbo/gen@npm:2.7.6"
+"@turbo/gen@npm:^2.8.2":
+  version: 2.8.2
+  resolution: "@turbo/gen@npm:2.8.2"
   dependencies:
-    "@turbo/workspaces": "npm:2.7.6"
+    "@turbo/workspaces": "npm:2.8.2"
     commander: "npm:10.0.0"
     fs-extra: "npm:10.1.0"
-    inquirer: "npm:8.2.4"
+    inquirer: "npm:8.2.7"
     minimatch: "npm:9.0.0"
     node-plop: "npm:0.26.3"
     picocolors: "npm:1.0.1"
@@ -1689,28 +1704,28 @@ __metadata:
     validate-npm-package-name: "npm:5.0.0"
   bin:
     gen: dist/cli.js
-  checksum: 10/6422420a974595f7715855bfe837dda6fd7234b5b343956fe0b349e19a7aa80b72cf7708599a86fea50be9fe16892d640e4d3beb4a0cb85e668cbe6d5095ff6e
+  checksum: 10/48947040f1562df0c4d8b07219ece45485c52b450c03c0b06d55e917fd12a037770eb996152883f84bd6738b0395bfc7c34cdcf84d8bb275e7ac1e8da21000db
   languageName: node
   linkType: hard
 
-"@turbo/workspaces@npm:2.7.6":
-  version: 2.7.6
-  resolution: "@turbo/workspaces@npm:2.7.6"
+"@turbo/workspaces@npm:2.8.2":
+  version: 2.8.2
+  resolution: "@turbo/workspaces@npm:2.8.2"
   dependencies:
     commander: "npm:10.0.0"
     execa: "npm:5.1.1"
     fast-glob: "npm:3.2.12"
     fs-extra: "npm:10.1.0"
     gradient-string: "npm:2.0.1"
-    inquirer: "npm:8.2.4"
-    js-yaml: "npm:4.1.0"
+    inquirer: "npm:8.2.7"
+    js-yaml: "npm:4.1.1"
     ora: "npm:4.1.1"
     picocolors: "npm:1.0.1"
     semver: "npm:7.6.2"
     update-check: "npm:1.5.4"
   bin:
     workspaces: dist/cli.js
-  checksum: 10/484b1df42149d72d0e998c0e63f5f22b62ce2f7acb579f99e9f35ee180b904ad30389b51674d018303dfa230ec8862b218d404bdfa496daa579c7becb14a4133
+  checksum: 10/b3d4ddc19dfe02769a792339b3f91bc690ef356f02e099cf5b3973f0a26d1d21a99339aff76113b5a4192479c722a04f3483225beab371c04976843ad3e1ed8d
   languageName: node
   linkType: hard
 
@@ -3109,6 +3124,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"chardet@npm:^2.1.1":
+  version: 2.1.1
+  resolution: "chardet@npm:2.1.1"
+  checksum: 10/d56913b65e45c5c86f331988e2ef6264c131bfeadaae098ee719bf6610546c77740e37221ffec802dde56b5e4466613a4c754786f4da6b5f6c5477243454d324
+  languageName: node
+  linkType: hard
+
 "chevrotain-allstar@npm:~0.3.0":
   version: 0.3.1
   resolution: "chevrotain-allstar@npm:0.3.1"
@@ -4380,7 +4402,7 @@ __metadata:
   dependencies:
     eslint-config-next: "npm:^16.1.5"
     eslint-config-prettier: "npm:^10.1.8"
-    eslint-config-turbo: "npm:^2.7.6"
+    eslint-config-turbo: "npm:^2.8.2"
     eslint-plugin-react: "npm:7.37.5"
   languageName: unknown
   linkType: soft
@@ -4419,15 +4441,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-turbo@npm:^2.7.6":
-  version: 2.7.6
-  resolution: "eslint-config-turbo@npm:2.7.6"
+"eslint-config-turbo@npm:^2.8.2":
+  version: 2.8.2
+  resolution: "eslint-config-turbo@npm:2.8.2"
   dependencies:
-    eslint-plugin-turbo: "npm:2.7.6"
+    eslint-plugin-turbo: "npm:2.8.2"
   peerDependencies:
     eslint: ">6.6.0"
     turbo: ">2.0.0"
-  checksum: 10/a10b49d15e9901a2346d1fbcb40b68c2b8989519e13b6e36cb30d1590545cb9cc5e214fcfefdfe51342885c8b694aa1fb844ba058eab0a0f6c22e01b66107db5
+  checksum: 10/de9c2c7c63a46221009e80084942b40e3bfb3612887d18dfec176d386c266a2c0d78223b293f6a91facbf207a41ce74a179b58dfa894c92efdc9ca6c14886316
   languageName: node
   linkType: hard
 
@@ -4575,15 +4597,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-turbo@npm:2.7.6":
-  version: 2.7.6
-  resolution: "eslint-plugin-turbo@npm:2.7.6"
+"eslint-plugin-turbo@npm:2.8.2":
+  version: 2.8.2
+  resolution: "eslint-plugin-turbo@npm:2.8.2"
   dependencies:
     dotenv: "npm:16.0.3"
   peerDependencies:
     eslint: ">6.6.0"
     turbo: ">2.0.0"
-  checksum: 10/3396180d93a6651de1642e2ed3f69977771924f9afad882c464f9ebe16081a948544986e2e756ba9abf34cddfbc20c7581ead0494db360a402859e08dc2b69bb
+  checksum: 10/795f6f4a4cc7e25c5d06819f4345a8eb3b77c80ddd569ed37f27e47d588e95a308f164289aba903cfd00d15a0afb7dfc6b5d60565753c07dd0f7c95ce9717a46
   languageName: node
   linkType: hard
 
@@ -5712,6 +5734,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"iconv-lite@npm:^0.7.0":
+  version: 0.7.2
+  resolution: "iconv-lite@npm:0.7.2"
+  dependencies:
+    safer-buffer: "npm:>= 2.1.2 < 3.0.0"
+  checksum: 10/24c937b532f868e938386b62410b303b7c767ce3d08dc2829cbe59464d5a26ef86ae5ad1af6b34eec43ddfea39e7d101638644b0178d67262fa87015d59f983a
+  languageName: node
+  linkType: hard
+
 "ieee754@npm:^1.1.13":
   version: 1.2.1
   resolution: "ieee754@npm:1.2.1"
@@ -5795,15 +5826,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"inquirer@npm:8.2.4":
-  version: 8.2.4
-  resolution: "inquirer@npm:8.2.4"
+"inquirer@npm:8.2.7":
+  version: 8.2.7
+  resolution: "inquirer@npm:8.2.7"
   dependencies:
+    "@inquirer/external-editor": "npm:^1.0.0"
     ansi-escapes: "npm:^4.2.1"
     chalk: "npm:^4.1.1"
     cli-cursor: "npm:^3.1.0"
     cli-width: "npm:^3.0.0"
-    external-editor: "npm:^3.0.3"
     figures: "npm:^3.0.0"
     lodash: "npm:^4.17.21"
     mute-stream: "npm:0.0.8"
@@ -5813,8 +5844,8 @@ __metadata:
     string-width: "npm:^4.1.0"
     strip-ansi: "npm:^6.0.0"
     through: "npm:^2.3.6"
-    wrap-ansi: "npm:^7.0.0"
-  checksum: 10/879e462bec401ea1c89ee219359cd321ac7eee623571c34c584b4c6db52d12584f4955dca5889966f417f8af7b6aff96a7bdac8039771871f9e32acfbcceaab4
+    wrap-ansi: "npm:^6.0.1"
+  checksum: 10/526fb5ca55a29decda9b67c7b2bd437730152104c6e7c5f0d7ade90af6dc999371e1602ce86eb4a39ee3d91993501cddec32e4fe3f599723f2b653b02b685e3b
   languageName: node
   linkType: hard
 
@@ -10350,58 +10381,58 @@ __metadata:
   languageName: node
   linkType: hard
 
-"turbo-darwin-64@npm:2.7.6":
-  version: 2.7.6
-  resolution: "turbo-darwin-64@npm:2.7.6"
+"turbo-darwin-64@npm:2.8.2":
+  version: 2.8.2
+  resolution: "turbo-darwin-64@npm:2.8.2"
   conditions: os=darwin & cpu=x64
   languageName: node
   linkType: hard
 
-"turbo-darwin-arm64@npm:2.7.6":
-  version: 2.7.6
-  resolution: "turbo-darwin-arm64@npm:2.7.6"
+"turbo-darwin-arm64@npm:2.8.2":
+  version: 2.8.2
+  resolution: "turbo-darwin-arm64@npm:2.8.2"
   conditions: os=darwin & cpu=arm64
   languageName: node
   linkType: hard
 
-"turbo-linux-64@npm:2.7.6":
-  version: 2.7.6
-  resolution: "turbo-linux-64@npm:2.7.6"
+"turbo-linux-64@npm:2.8.2":
+  version: 2.8.2
+  resolution: "turbo-linux-64@npm:2.8.2"
   conditions: os=linux & cpu=x64
   languageName: node
   linkType: hard
 
-"turbo-linux-arm64@npm:2.7.6":
-  version: 2.7.6
-  resolution: "turbo-linux-arm64@npm:2.7.6"
+"turbo-linux-arm64@npm:2.8.2":
+  version: 2.8.2
+  resolution: "turbo-linux-arm64@npm:2.8.2"
   conditions: os=linux & cpu=arm64
   languageName: node
   linkType: hard
 
-"turbo-windows-64@npm:2.7.6":
-  version: 2.7.6
-  resolution: "turbo-windows-64@npm:2.7.6"
+"turbo-windows-64@npm:2.8.2":
+  version: 2.8.2
+  resolution: "turbo-windows-64@npm:2.8.2"
   conditions: os=win32 & cpu=x64
   languageName: node
   linkType: hard
 
-"turbo-windows-arm64@npm:2.7.6":
-  version: 2.7.6
-  resolution: "turbo-windows-arm64@npm:2.7.6"
+"turbo-windows-arm64@npm:2.8.2":
+  version: 2.8.2
+  resolution: "turbo-windows-arm64@npm:2.8.2"
   conditions: os=win32 & cpu=arm64
   languageName: node
   linkType: hard
 
-"turbo@npm:^2.7.6":
-  version: 2.7.6
-  resolution: "turbo@npm:2.7.6"
+"turbo@npm:^2.8.2":
+  version: 2.8.2
+  resolution: "turbo@npm:2.8.2"
   dependencies:
-    turbo-darwin-64: "npm:2.7.6"
-    turbo-darwin-arm64: "npm:2.7.6"
-    turbo-linux-64: "npm:2.7.6"
-    turbo-linux-arm64: "npm:2.7.6"
-    turbo-windows-64: "npm:2.7.6"
-    turbo-windows-arm64: "npm:2.7.6"
+    turbo-darwin-64: "npm:2.8.2"
+    turbo-darwin-arm64: "npm:2.8.2"
+    turbo-linux-64: "npm:2.8.2"
+    turbo-linux-arm64: "npm:2.8.2"
+    turbo-windows-64: "npm:2.8.2"
+    turbo-windows-arm64: "npm:2.8.2"
   dependenciesMeta:
     turbo-darwin-64:
       optional: true
@@ -10417,7 +10448,7 @@ __metadata:
       optional: true
   bin:
     turbo: bin/turbo
-  checksum: 10/88dd2f3bedf238f8f2d55416cd77179d9708a283528a4d3d9752c950e08c8bbfd81e8fe05837426891f02eb8574da07385d84ef75769f2a71ba41b2e26f5f3a6
+  checksum: 10/36d044fab23004f588f236c727cd29555a2bf58752536e5052dbb47625a4fc28ee9cc7e3e27fd4c644ec6838f78229e2d8b3e29707c8346cfe6b35c4c607b0cf
   languageName: node
   linkType: hard
 
@@ -10425,14 +10456,14 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "turborepo-example@workspace:."
   dependencies:
-    "@turbo/gen": "npm:^2.7.6"
+    "@turbo/gen": "npm:^2.8.2"
     eslint: "npm:^9.39.2"
     eslint-config-custom: "npm:*"
     next: "npm:16.1.5"
     prettier: "npm:^3.8.1"
     prettier-plugin-tailwindcss: "npm:^0.7.2"
     syncpack: "npm:^13.0.4"
-    turbo: "npm:^2.7.6"
+    turbo: "npm:^2.8.2"
   languageName: unknown
   linkType: soft
 
@@ -11180,14 +11211,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"wrap-ansi@npm:^7.0.0":
-  version: 7.0.0
-  resolution: "wrap-ansi@npm:7.0.0"
+"wrap-ansi@npm:^6.0.1":
+  version: 6.2.0
+  resolution: "wrap-ansi@npm:6.2.0"
   dependencies:
     ansi-styles: "npm:^4.0.0"
     string-width: "npm:^4.1.0"
     strip-ansi: "npm:^6.0.0"
-  checksum: 10/cebdaeca3a6880da410f75209e68cd05428580de5ad24535f22696d7d9cab134d1f8498599f344c3cf0fb37c1715807a183778d8c648d6cc0cb5ff2bb4236540
+  checksum: 10/0d64f2d438e0b555e693b95aee7b2689a12c3be5ac458192a1ce28f542a6e9e59ddfecc37520910c2c88eb1f82a5411260566dba5064e8f9895e76e169e76187
   languageName: node
   linkType: hard
 
