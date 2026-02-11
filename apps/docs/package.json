@@ -11,10 +11,10 @@
   "dependencies": {
     "nextra": "^4.6.1",
     "nextra-theme-docs": "^4.6.1",
-    "ui": "*"
+    "ui": "workspace:*"
   },
   "devDependencies": {
-    "eslint-config-custom": "*",
-    "tsconfig": "*"
+    "eslint-config-custom": "workspace:*",
+    "tsconfig": "workspace:*"
   }
 }

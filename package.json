@@ -15,19 +15,23 @@
   "devDependencies": {
     "@turbo/gen": "^2.8.4",
     "eslint": "^10.0.0",
-    "eslint-config-custom": "*",
+    "eslint-config-custom": "workspace:*",
     "prettier": "^3.8.1",
     "prettier-plugin-tailwindcss": "^0.7.2",
     "syncpack": "^13.0.4",
     "turbo": "^2.8.4"
   },
-  "packageManager": "yarn@4.10.3",
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ],
-  "resolutions": {
-    "tmp": "0.2.4",
-    "js-yaml": "4.1.1"
+  "packageManager": "pnpm@10.29.3",
+  "pnpm": {
+    "overrides": {
+      "tmp": "0.2.4",
+      "js-yaml": "4.1.1"
+    },
+    "onlyBuiltDependencies": [
+      "core-js-pure",
+      "esbuild",
+      "sharp",
+      "unrs-resolver"
+    ]
   }
 }

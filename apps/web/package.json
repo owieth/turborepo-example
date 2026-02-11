@@ -11,10 +11,10 @@
   "dependencies": {
     "react": "19.2.4",
     "react-dom": "19.2.4",
-    "ui": "*"
+    "ui": "workspace:*"
   },
   "devDependencies": {
-    "eslint-config-custom": "*",
-    "tsconfig": "*"
+    "eslint-config-custom": "workspace:*",
+    "tsconfig": "workspace:*"
   }
 }
