@@ -18,7 +18,7 @@
     "eslint-config-custom": "workspace:*",
     "prettier": "^3.8.1",
     "prettier-plugin-tailwindcss": "^0.7.2",
-    "syncpack": "^13.0.4",
+    "syncpack": "^14.0.0",
     "turbo": "^2.8.9"
   },
   "packageManager": "pnpm@10.29.3",
