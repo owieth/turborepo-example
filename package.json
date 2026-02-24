@@ -13,13 +13,13 @@
     "next": "16.1.6"
   },
   "devDependencies": {
-    "@turbo/gen": "^2.8.9",
+    "@turbo/gen": "^2.8.10",
     "eslint": "^10.0.0",
     "eslint-config-custom": "workspace:*",
     "prettier": "^3.8.1",
     "prettier-plugin-tailwindcss": "^0.7.2",
     "syncpack": "^14.0.0",
-    "turbo": "^2.8.9"
+    "turbo": "^2.8.10"
   },
   "packageManager": "pnpm@10.29.3",
   "pnpm": {
