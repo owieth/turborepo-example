@@ -12,7 +12,7 @@
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
     "eslint-config-custom": "workspace:*",
-    "postcss": "^8.5.6",
+    "postcss": "^8.5.8",
     "react": "^19.2.4",
     "tailwindcss": "^4.1.18",
     "tsconfig": "workspace:*",
