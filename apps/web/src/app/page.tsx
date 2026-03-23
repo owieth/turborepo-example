@@ -29,7 +29,7 @@ export default function Home() {
       <main className="mx-auto w-auto px-4 pt-16 pb-8 sm:pt-24 lg:px-8">
         <h1 className="mx-auto text-center text-6xl font-extrabold tracking-tight text-white sm:text-7xl lg:text-8xl xl:text-8xl">
           Web
-          <span className="from-brandred to-brandblue block bg-gradient-to-r bg-clip-text px-2 text-transparent">
+          <span className="from-sky-400 to-blue-600 block bg-gradient-to-r bg-clip-text px-2 text-transparent">
             Turborepo Example
           </span>
         </h1>
