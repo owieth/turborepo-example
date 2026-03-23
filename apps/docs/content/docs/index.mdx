@@ -1,116 +1,90 @@
 ---
-title: Home
-description: A streamlined starter template for Nextra documentation sites
+title: Turborepo Example
+description: A modern monorepo template built with Next.js 16, React 19, Tailwind CSS v4, TypeScript 5.9
 ---
 
-# Nextra Docs Starter
+# Turborepo Example
 
-A clean, beginner-friendly starter template for building documentation sites with Nextra. If you've found the official Nextra docs a bit overwhelming, this template is designed to help you get started faster with clear examples and sensible defaults.
+A modern monorepo template built with **Next.js 16**, **React 19**, **Tailwind CSS v4**, and **TypeScript 5.9**. Powered by [Turborepo](https://turbo.build/) for fast, incremental builds across all apps and packages.
 
-[Get Started →](/docs)
+[GitHub Repository](https://github.com/owieth/turborepo-example)
 
-You can deploy this template on Vercel by clicking the button below
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fphucbm%2Fnextra-docs-starter)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fowieth%2Fturborepo-example)
 
 ## Features
 
-### 🔍 Improved search UI
+### Turborepo Caching
 
-Search functionality works out of the box based on Pagefind.
-Just clone this template and you're ready to go - no additional setup required.
+Turborepo remembers the output of every task it has ever run, so it never does the same work twice. This dramatically speeds up local development and CI pipelines.
 
-<img src={'/images/search-dialog.gif'} alt={'search dialog'} />
+### Shared UI Library (shadcn/ui)
 
-<Callout>To use search on local, you need to run `pnpm build` first.</Callout>
+A shared `packages/ui` library built on [shadcn/ui](https://ui.shadcn.com/) provides reusable components across all apps. Add a component once and use it everywhere.
 
-### 🧭 Clear Navigation Structure
+### TypeScript Strict Mode
 
-Pre-configured `_meta.global.tsx` with examples of:
+All apps and packages use TypeScript in strict mode with a shared base configuration in `packages/tsconfig`, ensuring type safety across the entire monorepo.
 
-- **Navbar pages** - Standalone pages without sidebar
-- **Documentation pages** - Pages with sidebar navigation
-- **Dropdown menus** - External links and resources
-- **Separators** - Organized sections in sidebar
+### Tailwind CSS v4
 
-See the [Navigation Guide](/docs/navigation) for complete documentation.
+Styling is handled by Tailwind CSS v4 with a shared configuration, giving all apps a consistent design system out of the box.
 
-### 🎨 Theme Customization
+### Nextra Documentation Site
 
-Easy-to-configure theme options including:
+A dedicated documentation app (`apps/docs`) built with [Nextra](https://nextra.site), providing a ready-to-use docs site with search, navigation, and MDX support.
 
-- Full-width layouts
-- Table of contents control
-- Timestamps
-- Typography presets
+### pnpm Workspaces
 
-### 📝 Ready-to-Use Templates
-
-Includes example pages for:
-
-- Documentation structure
-- About page
-- Contact page
-- Custom layouts
-
-## What Makes This Different?
-
-The official Nextra documentation can be confusing for newcomers, especially when it comes to:
-
-- Understanding the difference between page types
-- Configuring navigation properly
-- Setting up the `_meta` files correctly
-
-This starter template provides:
-
-- **Clear examples** of every configuration option
-- **Complete code snippets** you can copy and modify
-- **Organized structure** that's easy to understand
-- **Best practices** built-in from the start
+The monorepo uses [pnpm workspaces](https://pnpm.io/workspaces) for dependency management, ensuring fast installs and efficient disk usage through content-addressable storage.
 
 ## Project Structure
 
 <FileTree>
-  <FileTree.Folder name="app" defaultOpen>
-    <FileTree.Folder name="[[...mdxPath]]">
-      <FileTree.File name="page.jsx" />
+  <FileTree.Folder name="apps" defaultOpen>
+    <FileTree.Folder name="web">
+      <FileTree.File name="Next.js 16 web application" />
     </FileTree.Folder>
-    <FileTree.File name="_meta.global.tsx" />
-    <FileTree.File name="globals.css" />
-    <FileTree.File name="layout.tsx" />
-    <FileTree.File name="not-found.tsx" />
+    <FileTree.Folder name="docs">
+      <FileTree.File name="Nextra documentation site" />
+    </FileTree.Folder>
   </FileTree.Folder>
-  <FileTree.Folder name="content" defaultOpen>
-    <FileTree.File name="article.mdx" />
-    <FileTree.File name="contact.mdx" />
-    <FileTree.File name="index.mdx" />
-    <FileTree.Folder name="docs" defaultOpen>
-      <FileTree.File name="index.mdx" />
-      <FileTree.File name="navigation.mdx" />
-      <FileTree.File name="tips.mdx" />
+  <FileTree.Folder name="packages" defaultOpen>
+    <FileTree.Folder name="ui">
+      <FileTree.File name="Shared component library (shadcn/ui)" />
+    </FileTree.Folder>
+    <FileTree.Folder name="tsconfig">
+      <FileTree.File name="Shared TypeScript configuration" />
+    </FileTree.Folder>
+    <FileTree.Folder name="eslint-config-custom">
+      <FileTree.File name="Shared ESLint configuration" />
     </FileTree.Folder>
   </FileTree.Folder>
 </FileTree>
 
-## Need Help?
+## Quick Start
 
-- **Issues**: [GitHub Issues](https://github.com/phucbm/nextra-docs-starter/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/phucbm/nextra-docs-starter/discussions)
-- **Nextra Docs**: [Official Documentation](https://nextra.site)
+Clone the repository, install dependencies, and start the development server:
 
-## Show Your Support
+```bash
+git clone https://github.com/owieth/turborepo-example.git
+cd turborepo-example
+pnpm install
+pnpm dev
+```
 
-If this template helped you, consider:
+<Callout>
+  Make sure you have [pnpm](https://pnpm.io/) installed. You can install it with `corepack enable` if you are using Node.js 16.13 or later.
+</Callout>
 
-- ⭐ [Starring the repository](https://github.com/phucbm/nextra-docs-starter)
-- 🐛 [Reporting issues](https://github.com/phucbm/nextra-docs-starter/issues)
-- 💡 [Suggesting features](https://github.com/phucbm/nextra-docs-starter/discussions)
-- 📖 [Contributing improvements](https://github.com/phucbm/nextra-docs-starter/pulls)
+This will start all apps in development mode. The web app runs on [localhost:3000](http://localhost:3000) and the docs site runs on [localhost:3001](http://localhost:3001).
+
+## Links
+
+- **Source Code**: [github.com/owieth/turborepo-example](https://github.com/owieth/turborepo-example)
+- **Issues**: [GitHub Issues](https://github.com/owieth/turborepo-example/issues)
+- **Turborepo Docs**: [turbo.build](https://turbo.build/)
+- **Nextra Docs**: [nextra.site](https://nextra.site)
 
 ## License
 
-MIT License - feel free to use this template for your projects!
-
----
-
-**Ready to build your docs?** [Get Started →](/docs/)
+MIT License -- feel free to use this template for your projects.
