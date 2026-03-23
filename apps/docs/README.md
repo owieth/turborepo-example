@@ -1,28 +1,29 @@
-## Getting Started
+# Docs
 
-First, run the development server:
+Nextra-powered documentation site with MDX, full-text search, and theme customization.
+
+## Development
 
 ```bash
-pnpm dev
+pnpm dev --filter docs
 ```
 
-Open [http://localhost:3001](http://localhost:3001) with your browser to see the result.
+Runs on [http://localhost:3001](http://localhost:3001).
 
-You can start editing the page by modifying `src/app/page.tsx`. The page auto-updates as you edit the file.
+## Content Structure
 
-To create [API routes](https://nextjs.org/docs/app/building-your-application/routing/router-handlers) add an `api/` directory to the `app/` directory with a `route.ts` file. For individual endpoints, create a subfolder in the `api` directory, like `api/hello/route.ts` would map to [http://localhost:3001/api/hello](http://localhost:3001/api/hello).
+Documentation pages live in `content/docs/`. Add `.mdx` files to create new pages. Navigation is configured in `content/docs/_meta.global.tsx`.
 
-## Learn More
+## Search
 
-To learn more about Next.js, take a look at the following resources:
+Search is powered by Pagefind and works after building:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn/foundations/about-nextjs) - an interactive Next.js tutorial.
+```bash
+pnpm build --filter docs
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Tech Stack
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_source=github.com&utm_medium=referral&utm_campaign=turborepo-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Next.js 16
+- Nextra 4.6
+- MDX
