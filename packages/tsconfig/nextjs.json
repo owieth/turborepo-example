@@ -17,8 +17,7 @@
     "module": "esnext",
     "noEmit": true,
     "resolveJsonModule": true,
-    "strict": false,
-    "target": "es5",
+    "target": "es2022",
     "paths": {
       "@/*": ["./*"],
       "@ui/*": ["../../packages/ui/*"],
