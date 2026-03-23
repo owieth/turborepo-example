@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev --port 3001",
-    "build": "next build",
+    "build": "next build --no-turbo",
     "start": "next start",
     "check-types": "tsc --noEmit",
     "lint": "eslint ."
