@@ -9,6 +9,7 @@
     "check-types": "turbo check-types",
     "clean": "turbo clean",
     "prettier": "prettier --write --ignore-path .gitignore .",
+    "test": "turbo test",
     "prepare": "husky"
   },
   "lint-staged": {
@@ -31,7 +32,8 @@
     "prettier": "^3.8.1",
     "prettier-plugin-tailwindcss": "^0.7.2",
     "syncpack": "^14.0.0",
-    "turbo": "^2.8.12"
+    "turbo": "^2.8.12",
+    "vitest": "^4.1.1"
   },
   "packageManager": "pnpm@10.29.3",
   "pnpm": {
