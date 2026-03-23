@@ -4,6 +4,7 @@
   "license": "MIT",
   "scripts": {
     "lint": "eslint \"**/*.ts*\"",
+    "test": "vitest run",
     "ui:add": "pnpm dlx shadcn-ui@latest add"
   },
   "devDependencies": {
