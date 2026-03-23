@@ -4,8 +4,8 @@ import { getPageMap } from 'nextra/page-map';
 import 'nextra-theme-docs/style.css';
 
 export const metadata = {
-  // Define your metadata here
-  // For more information on metadata API, see: https://nextjs.org/docs/app/building-your-application/optimizing/metadata
+  title: 'Turborepo Example — Documentation',
+  description: 'Documentation for the Turborepo Example monorepo template. Built with Next.js 16, React 19, Tailwind CSS v4, and TypeScript.',
 };
 
 const banner = <Banner storageKey="some-key">Nextra 4.0 is released 🎉</Banner>;
