@@ -1,0 +1,54 @@
+---
+title: Architecture
+description: Monorepo structure and package relationships
+---
+
+# Architecture
+
+## Overview
+
+This monorepo uses Turborepo for build orchestration and pnpm workspaces for dependency management.
+
+## Package Graph
+
+Apps depend on shared packages. Changes to a package trigger rebuilds only in affected apps.
+
+| Package | Used By |
+|---------|---------|
+| `packages/ui` | `apps/web`, `apps/docs` |
+| `packages/tsconfig` | All apps and packages |
+| `packages/eslint-config-custom` | All apps and packages |
+
+## Apps
+
+### Web (`apps/web`)
+
+The main Next.js application. Imports shared UI components and styles from `packages/ui`.
+
+### Docs (`apps/docs`)
+
+This documentation site, built with Nextra. Uses MDX for content and Pagefind for search.
+
+## Packages
+
+### UI (`packages/ui`)
+
+Shared React component library built with shadcn/ui patterns. Components use Radix primitives for accessibility and class-variance-authority for variant styling.
+
+Import components in any app:
+
+```tsx
+import { Button } from '@ui/components/button';
+```
+
+### TypeScript Config (`packages/tsconfig`)
+
+Centralized TypeScript configurations. Three presets are available:
+
+- `base.json` — Strict base configuration
+- `nextjs.json` — For Next.js applications
+- `react-library.json` — For React library packages
+
+### ESLint Config (`packages/eslint-config-custom`)
+
+Shared ESLint rules extending Next.js, Turborepo, and Prettier configurations.
