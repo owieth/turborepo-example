@@ -8,7 +8,16 @@
     "lint": "turbo lint",
     "check-types": "turbo check-types",
     "clean": "turbo clean",
-    "prettier": "prettier --write --ignore-path .gitignore ."
+    "prettier": "prettier --write --ignore-path .gitignore .",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js,jsx,mjs}": [
+      "eslint --fix"
+    ],
+    "*.{ts,tsx,js,jsx,mjs,json,md,mdx,css,yaml,yml}": [
+      "prettier --write"
+    ]
   },
   "dependencies": {
     "next": "16.1.7"
@@ -17,6 +26,8 @@
     "@turbo/gen": "^2.8.12",
     "eslint": "^10.0.2",
     "eslint-config-custom": "workspace:*",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.4.0",
     "prettier": "^3.8.1",
     "prettier-plugin-tailwindcss": "^0.7.2",
     "syncpack": "^14.0.0",
