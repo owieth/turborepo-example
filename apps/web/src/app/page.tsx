@@ -5,27 +5,33 @@ import { ThemeToggle } from '@ui/components/theme-toggle';
 const FEATURES = [
   {
     title: 'Turborepo Caching',
-    description: 'Incremental builds with content-aware hashing. Only rebuild what changed.',
+    description:
+      'Incremental builds with content-aware hashing. Only rebuild what changed.',
   },
   {
     title: 'Shared UI Library',
-    description: 'shadcn/ui components with Radix primitives, shared across all apps.',
+    description:
+      'shadcn/ui components with Radix primitives, shared across all apps.',
   },
   {
     title: 'TypeScript Strict',
-    description: 'Centralized tsconfig with strict type checking and declaration maps.',
+    description:
+      'Centralized tsconfig with strict type checking and declaration maps.',
   },
   {
     title: 'Tailwind CSS v4',
-    description: 'CSS-first configuration with custom theme variables and dark mode.',
+    description:
+      'CSS-first configuration with custom theme variables and dark mode.',
   },
   {
     title: 'Nextra Documentation',
-    description: 'Full documentation site with MDX, search, and automatic navigation.',
+    description:
+      'Full documentation site with MDX, search, and automatic navigation.',
   },
   {
     title: 'pnpm Workspaces',
-    description: 'Fast, disk-efficient package management with native monorepo support.',
+    description:
+      'Fast, disk-efficient package management with native monorepo support.',
   },
 ];
 
@@ -40,7 +46,7 @@ export default function Home() {
         <ThemeToggle />
       </div>
       <header className="flex flex-col items-center justify-center px-4 pt-24 pb-16 text-center sm:pt-32">
-        <p className="mb-4 text-sm font-medium uppercase tracking-widest text-zinc-500">
+        <p className="mb-4 text-sm font-medium tracking-widest text-zinc-500 uppercase">
           Monorepo Template
         </p>
         <h1 className="max-w-2xl text-5xl font-extrabold tracking-tight text-white sm:text-6xl lg:text-7xl">
@@ -55,7 +61,9 @@ export default function Home() {
         </p>
         <div className="mt-8 flex gap-4">
           <Button asChild>
-            <a href="https://github.com/owieth/turborepo-example">Get Started</a>
+            <a href="https://github.com/owieth/turborepo-example">
+              Get Started
+            </a>
           </Button>
           <Button variant="outline" asChild>
             <a href="http://localhost:3001">Documentation</a>
@@ -65,14 +73,18 @@ export default function Home() {
 
       <main className="mx-auto max-w-4xl px-4 pb-24">
         <section>
-          <h2 className="mb-8 text-center text-2xl font-bold text-white">Features</h2>
+          <h2 className="mb-8 text-center text-2xl font-bold text-white">
+            Features
+          </h2>
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {FEATURES.map((feature) => (
+            {FEATURES.map(feature => (
               <div
                 key={feature.title}
                 className="rounded-lg border border-zinc-800 bg-zinc-900 p-6"
               >
-                <h3 className="mb-2 text-sm font-semibold text-white">{feature.title}</h3>
+                <h3 className="mb-2 text-sm font-semibold text-white">
+                  {feature.title}
+                </h3>
                 <p className="text-sm text-zinc-400">{feature.description}</p>
               </div>
             ))}

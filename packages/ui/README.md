@@ -4,9 +4,9 @@ Shared React component library built with shadcn/ui, Radix primitives, and Tailw
 
 ## Components
 
-| Component | Description |
-|-----------|-------------|
-| `Button` | Button with variants (default, destructive, outline, secondary, ghost, link) |
+| Component | Description                                                                  |
+| --------- | ---------------------------------------------------------------------------- |
+| `Button`  | Button with variants (default, destructive, outline, secondary, ghost, link) |
 
 ## Adding Components
 

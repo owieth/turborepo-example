@@ -5,7 +5,8 @@ import 'nextra-theme-docs/style.css';
 
 export const metadata = {
   title: 'Turborepo Example — Documentation',
-  description: 'Documentation for the Turborepo Example monorepo template. Built with Next.js 16, React 19, Tailwind CSS v4, and TypeScript.',
+  description:
+    'Documentation for the Turborepo Example monorepo template. Built with Next.js 16, React 19, Tailwind CSS v4, and TypeScript.',
 };
 
 const navbar = (
@@ -14,7 +15,9 @@ const navbar = (
     // ... Your additional navbar options
   />
 );
-const footer = <Footer>MIT {new Date().getFullYear()} © Olivier Winkler.</Footer>;
+const footer = (
+  <Footer>MIT {new Date().getFullYear()} © Olivier Winkler.</Footer>
+);
 
 export default async function RootLayout({
   children,

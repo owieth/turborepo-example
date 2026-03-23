@@ -1,463 +1,569 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Turborepo Example — Modern Monorepo Template</title>
-  <meta name="description" content="A modern monorepo template built with Next.js 16, React 19, Tailwind CSS v4, TypeScript 5.9, Turborepo, and pnpm workspaces. Production-ready with shared UI library, documentation site, and strict type safety.">
-  <link rel="canonical" href="https://owieth.github.io/turborepo-example/">
-  <meta name="theme-color" content="#fafafa" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#0a0a0a" media="(prefers-color-scheme: dark)">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Turborepo Example — Modern Monorepo Template</title>
+    <meta
+      name="description"
+      content="A modern monorepo template built with Next.js 16, React 19, Tailwind CSS v4, TypeScript 5.9, Turborepo, and pnpm workspaces. Production-ready with shared UI library, documentation site, and strict type safety."
+    />
+    <link rel="canonical" href="https://owieth.github.io/turborepo-example/" />
+    <meta
+      name="theme-color"
+      content="#fafafa"
+      media="(prefers-color-scheme: light)"
+    />
+    <meta
+      name="theme-color"
+      content="#0a0a0a"
+      media="(prefers-color-scheme: dark)"
+    />
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Turborepo Example — Modern Monorepo Template">
-  <meta property="og:description" content="A modern monorepo template with Next.js 16, React 19, Tailwind CSS v4, TypeScript 5.9, Turborepo, and pnpm workspaces.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://owieth.github.io/turborepo-example/">
-  <meta property="og:locale" content="en_US">
-  <meta property="og:site_name" content="Turborepo Example">
+    <!-- Open Graph -->
+    <meta
+      property="og:title"
+      content="Turborepo Example — Modern Monorepo Template"
+    />
+    <meta
+      property="og:description"
+      content="A modern monorepo template with Next.js 16, React 19, Tailwind CSS v4, TypeScript 5.9, Turborepo, and pnpm workspaces."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://owieth.github.io/turborepo-example/"
+    />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="Turborepo Example" />
 
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Turborepo Example — Modern Monorepo Template">
-  <meta name="twitter:description" content="A modern monorepo template with Next.js 16, React 19, Tailwind CSS v4, TypeScript 5.9, Turborepo, and pnpm workspaces.">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+    <meta
+      name="twitter:title"
+      content="Turborepo Example — Modern Monorepo Template"
+    />
+    <meta
+      name="twitter:description"
+      content="A modern monorepo template with Next.js 16, React 19, Tailwind CSS v4, TypeScript 5.9, Turborepo, and pnpm workspaces."
+    />
 
-  <style>
-    :root {
-      --bg: #fafafa;
-      --surface: #fff;
-      --text: #0a0a0a;
-      --text-secondary: #525252;
-      --text-tertiary: #a3a3a3;
-      --accent: #0ea5e9;
-      --accent-subtle: #e0f2fe;
-      --border: #e5e5e5;
-      --code-bg: #f5f5f5;
-      --code-text: #1e293b;
-      --tag-bg: #f0f0f0;
-      --tag-text: #404040;
-    }
-    @media (prefers-color-scheme: dark) {
+    <style>
       :root {
-        --bg: #0a0a0a;
-        --surface: #141414;
-        --text: #fafafa;
-        --text-secondary: #a3a3a3;
-        --text-tertiary: #525252;
-        --accent: #38bdf8;
-        --accent-subtle: #0c2d48;
-        --border: #262626;
-        --code-bg: #1a1a1a;
-        --code-text: #e2e8f0;
-        --tag-bg: #1f1f1f;
-        --tag-text: #d4d4d4;
+        --bg: #fafafa;
+        --surface: #fff;
+        --text: #0a0a0a;
+        --text-secondary: #525252;
+        --text-tertiary: #a3a3a3;
+        --accent: #0ea5e9;
+        --accent-subtle: #e0f2fe;
+        --border: #e5e5e5;
+        --code-bg: #f5f5f5;
+        --code-text: #1e293b;
+        --tag-bg: #f0f0f0;
+        --tag-text: #404040;
       }
-    }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #0a0a0a;
+          --surface: #141414;
+          --text: #fafafa;
+          --text-secondary: #a3a3a3;
+          --text-tertiary: #525252;
+          --accent: #38bdf8;
+          --accent-subtle: #0c2d48;
+          --border: #262626;
+          --code-bg: #1a1a1a;
+          --code-text: #e2e8f0;
+          --tag-bg: #1f1f1f;
+          --tag-text: #d4d4d4;
+        }
+      }
 
-    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+      *,
+      *::before,
+      *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-    }
+      body {
+        font-family:
+          -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue',
+          Arial, sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.6;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
 
-    .container {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 0 24px;
-    }
+      .container {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 0 24px;
+      }
 
-    /* Hero */
-    .hero {
-      padding: 96px 0 64px;
-      text-align: center;
-    }
-    .hero-label {
-      display: inline-block;
-      font-size: 13px;
-      font-weight: 600;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-      color: var(--accent);
-      margin-bottom: 20px;
-    }
-    .hero h1 {
-      font-size: clamp(36px, 6vw, 56px);
-      font-weight: 800;
-      letter-spacing: -0.03em;
-      line-height: 1.1;
-      text-wrap: balance;
-      margin-bottom: 16px;
-    }
-    .hero p {
-      font-size: 18px;
-      color: var(--text-secondary);
-      max-width: 540px;
-      margin: 0 auto 32px;
-      text-wrap: pretty;
-      line-height: 1.7;
-    }
-    .badge-row {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 8px;
-      margin-bottom: 40px;
-    }
-    .badge {
-      display: inline-block;
-      padding: 5px 12px;
-      background: var(--tag-bg);
-      color: var(--tag-text);
-      border-radius: 6px;
-      font-size: 13px;
-      font-weight: 500;
-      white-space: nowrap;
-    }
-    .cta-row {
-      display: flex;
-      justify-content: center;
-      gap: 12px;
-      flex-wrap: wrap;
-    }
-    .btn {
-      display: inline-block;
-      padding: 12px 28px;
-      border-radius: 8px;
-      font-size: 15px;
-      font-weight: 600;
-      text-decoration: none;
-      transition: opacity 0.15s;
-    }
-    .btn:hover { opacity: 0.85; }
-    .btn-primary {
-      background: var(--accent);
-      color: #fff;
-    }
-    .btn-secondary {
-      background: var(--surface);
-      color: var(--text);
-      border: 1px solid var(--border);
-    }
+      /* Hero */
+      .hero {
+        padding: 96px 0 64px;
+        text-align: center;
+      }
+      .hero-label {
+        display: inline-block;
+        font-size: 13px;
+        font-weight: 600;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: var(--accent);
+        margin-bottom: 20px;
+      }
+      .hero h1 {
+        font-size: clamp(36px, 6vw, 56px);
+        font-weight: 800;
+        letter-spacing: -0.03em;
+        line-height: 1.1;
+        text-wrap: balance;
+        margin-bottom: 16px;
+      }
+      .hero p {
+        font-size: 18px;
+        color: var(--text-secondary);
+        max-width: 540px;
+        margin: 0 auto 32px;
+        text-wrap: pretty;
+        line-height: 1.7;
+      }
+      .badge-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+        margin-bottom: 40px;
+      }
+      .badge {
+        display: inline-block;
+        padding: 5px 12px;
+        background: var(--tag-bg);
+        color: var(--tag-text);
+        border-radius: 6px;
+        font-size: 13px;
+        font-weight: 500;
+        white-space: nowrap;
+      }
+      .cta-row {
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+        flex-wrap: wrap;
+      }
+      .btn {
+        display: inline-block;
+        padding: 12px 28px;
+        border-radius: 8px;
+        font-size: 15px;
+        font-weight: 600;
+        text-decoration: none;
+        transition: opacity 0.15s;
+      }
+      .btn:hover {
+        opacity: 0.85;
+      }
+      .btn-primary {
+        background: var(--accent);
+        color: #fff;
+      }
+      .btn-secondary {
+        background: var(--surface);
+        color: var(--text);
+        border: 1px solid var(--border);
+      }
 
-    /* Sections */
-    section { padding: 56px 0; }
-    section + section { border-top: 1px solid var(--border); }
-    h2 {
-      font-size: 28px;
-      font-weight: 700;
-      letter-spacing: -0.02em;
-      margin-bottom: 8px;
-      text-wrap: balance;
-    }
-    .section-desc {
-      color: var(--text-secondary);
-      font-size: 16px;
-      margin-bottom: 28px;
-      text-wrap: pretty;
-    }
-    h3 {
-      font-size: 16px;
-      font-weight: 600;
-      margin-bottom: 4px;
-    }
+      /* Sections */
+      section {
+        padding: 56px 0;
+      }
+      section + section {
+        border-top: 1px solid var(--border);
+      }
+      h2 {
+        font-size: 28px;
+        font-weight: 700;
+        letter-spacing: -0.02em;
+        margin-bottom: 8px;
+        text-wrap: balance;
+      }
+      .section-desc {
+        color: var(--text-secondary);
+        font-size: 16px;
+        margin-bottom: 28px;
+        text-wrap: pretty;
+      }
+      h3 {
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 4px;
+      }
 
-    /* Grid layouts */
-    .grid-2 {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 12px;
-    }
-    .grid-3 {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 12px;
-    }
-    @media (max-width: 640px) {
-      .grid-2, .grid-3 { grid-template-columns: 1fr; }
-    }
+      /* Grid layouts */
+      .grid-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+      }
+      .grid-3 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
+      }
+      @media (max-width: 640px) {
+        .grid-2,
+        .grid-3 {
+          grid-template-columns: 1fr;
+        }
+      }
 
-    /* Cards */
-    .card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 20px;
-    }
-    .card h3 { color: var(--text); }
-    .card p {
-      font-size: 14px;
-      color: var(--text-secondary);
-      line-height: 1.6;
-      margin-top: 4px;
-      text-wrap: pretty;
-    }
-    .card-tag {
-      display: inline-block;
-      font-size: 12px;
-      font-weight: 500;
-      color: var(--accent);
-      background: var(--accent-subtle);
-      padding: 2px 8px;
-      border-radius: 4px;
-      margin-bottom: 10px;
-    }
+      /* Cards */
+      .card {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        padding: 20px;
+      }
+      .card h3 {
+        color: var(--text);
+      }
+      .card p {
+        font-size: 14px;
+        color: var(--text-secondary);
+        line-height: 1.6;
+        margin-top: 4px;
+        text-wrap: pretty;
+      }
+      .card-tag {
+        display: inline-block;
+        font-size: 12px;
+        font-weight: 500;
+        color: var(--accent);
+        background: var(--accent-subtle);
+        padding: 2px 8px;
+        border-radius: 4px;
+        margin-bottom: 10px;
+      }
 
-    /* Tech stack */
-    .tech-card {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-    .tech-version {
-      font-size: 13px;
-      color: var(--text-tertiary);
-      font-weight: 500;
-      font-variant-numeric: tabular-nums;
-    }
+      /* Tech stack */
+      .tech-card {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .tech-version {
+        font-size: 13px;
+        color: var(--text-tertiary);
+        font-weight: 500;
+        font-variant-numeric: tabular-nums;
+      }
 
-    /* Code block */
-    .code-block {
-      background: var(--code-bg);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 20px 24px;
-      overflow-x: auto;
-    }
-    .code-block pre {
-      font-family: "SF Mono", "Fira Code", "Fira Mono", Menlo, Consolas, monospace;
-      font-size: 14px;
-      line-height: 1.8;
-      color: var(--code-text);
-    }
-    .code-block .comment { color: var(--text-tertiary); }
+      /* Code block */
+      .code-block {
+        background: var(--code-bg);
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        padding: 20px 24px;
+        overflow-x: auto;
+      }
+      .code-block pre {
+        font-family:
+          'SF Mono', 'Fira Code', 'Fira Mono', Menlo, Consolas, monospace;
+        font-size: 14px;
+        line-height: 1.8;
+        color: var(--code-text);
+      }
+      .code-block .comment {
+        color: var(--text-tertiary);
+      }
 
-    /* Structure tree */
-    .tree {
-      font-family: "SF Mono", "Fira Code", "Fira Mono", Menlo, Consolas, monospace;
-      font-size: 14px;
-      line-height: 1.9;
-      color: var(--text-secondary);
-      background: var(--code-bg);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 20px 24px;
-      overflow-x: auto;
-    }
-    .tree .dir { color: var(--text); font-weight: 600; }
-    .tree .note { color: var(--text-tertiary); }
+      /* Structure tree */
+      .tree {
+        font-family:
+          'SF Mono', 'Fira Code', 'Fira Mono', Menlo, Consolas, monospace;
+        font-size: 14px;
+        line-height: 1.9;
+        color: var(--text-secondary);
+        background: var(--code-bg);
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        padding: 20px 24px;
+        overflow-x: auto;
+      }
+      .tree .dir {
+        color: var(--text);
+        font-weight: 600;
+      }
+      .tree .note {
+        color: var(--text-tertiary);
+      }
 
-    /* What's inside */
-    .item-row {
-      display: flex;
-      gap: 12px;
-      padding: 16px 0;
-      border-bottom: 1px solid var(--border);
-      align-items: baseline;
-    }
-    .item-row:last-child { border-bottom: none; }
-    .item-name {
-      font-family: "SF Mono", "Fira Code", "Fira Mono", Menlo, Consolas, monospace;
-      font-size: 14px;
-      font-weight: 600;
-      color: var(--text);
-      white-space: nowrap;
-      min-width: 180px;
-    }
-    .item-desc {
-      font-size: 14px;
-      color: var(--text-secondary);
-      text-wrap: pretty;
-    }
-    @media (max-width: 640px) {
-      .item-row { flex-direction: column; gap: 2px; }
-      .item-name { min-width: auto; }
-    }
+      /* What's inside */
+      .item-row {
+        display: flex;
+        gap: 12px;
+        padding: 16px 0;
+        border-bottom: 1px solid var(--border);
+        align-items: baseline;
+      }
+      .item-row:last-child {
+        border-bottom: none;
+      }
+      .item-name {
+        font-family:
+          'SF Mono', 'Fira Code', 'Fira Mono', Menlo, Consolas, monospace;
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--text);
+        white-space: nowrap;
+        min-width: 180px;
+      }
+      .item-desc {
+        font-size: 14px;
+        color: var(--text-secondary);
+        text-wrap: pretty;
+      }
+      @media (max-width: 640px) {
+        .item-row {
+          flex-direction: column;
+          gap: 2px;
+        }
+        .item-name {
+          min-width: auto;
+        }
+      }
 
-    /* Footer */
-    footer {
-      border-top: 1px solid var(--border);
-      padding: 32px 0;
-      text-align: center;
-      color: var(--text-tertiary);
-      font-size: 14px;
-    }
-    footer a {
-      color: var(--accent);
-      text-decoration: none;
-    }
-    footer a:hover { text-decoration: underline; }
-  </style>
+      /* Footer */
+      footer {
+        border-top: 1px solid var(--border);
+        padding: 32px 0;
+        text-align: center;
+        color: var(--text-tertiary);
+        font-size: 14px;
+      }
+      footer a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+      footer a:hover {
+        text-decoration: underline;
+      }
+    </style>
 
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "SoftwareSourceCode",
-    "name": "Turborepo Example",
-    "description": "A modern monorepo template built with Next.js 16, React 19, Tailwind CSS v4, TypeScript 5.9, Turborepo, and pnpm workspaces.",
-    "url": "https://owieth.github.io/turborepo-example/",
-    "codeRepository": "https://github.com/owieth/turborepo-example",
-    "programmingLanguage": ["TypeScript", "JavaScript", "CSS"],
-    "runtimePlatform": "Node.js",
-    "license": "https://opensource.org/licenses/MIT",
-    "author": {
-      "@type": "Person",
-      "name": "Olivier Winkler",
-      "url": "https://github.com/owieth"
-    }
-  }
-  </script>
-</head>
-<body>
-
-  <main class="container">
-
-    <!-- Hero -->
-    <div class="hero">
-      <span class="hero-label">Open Source Template</span>
-      <h1>Turborepo Example</h1>
-      <p>A modern monorepo template with everything you need to build, ship, and scale.</p>
-      <div class="badge-row">
-        <span class="badge">Next.js 16</span>
-        <span class="badge">React 19</span>
-        <span class="badge">Tailwind CSS v4</span>
-        <span class="badge">TypeScript 5.9</span>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareSourceCode",
+        "name": "Turborepo Example",
+        "description": "A modern monorepo template built with Next.js 16, React 19, Tailwind CSS v4, TypeScript 5.9, Turborepo, and pnpm workspaces.",
+        "url": "https://owieth.github.io/turborepo-example/",
+        "codeRepository": "https://github.com/owieth/turborepo-example",
+        "programmingLanguage": ["TypeScript", "JavaScript", "CSS"],
+        "runtimePlatform": "Node.js",
+        "license": "https://opensource.org/licenses/MIT",
+        "author": {
+          "@type": "Person",
+          "name": "Olivier Winkler",
+          "url": "https://github.com/owieth"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <main class="container">
+      <!-- Hero -->
+      <div class="hero">
+        <span class="hero-label">Open Source Template</span>
+        <h1>Turborepo Example</h1>
+        <p>
+          A modern monorepo template with everything you need to build, ship,
+          and scale.
+        </p>
+        <div class="badge-row">
+          <span class="badge">Next.js 16</span>
+          <span class="badge">React 19</span>
+          <span class="badge">Tailwind CSS v4</span>
+          <span class="badge">TypeScript 5.9</span>
+        </div>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#quick-start">Get Started</a>
+          <a
+            class="btn btn-secondary"
+            href="https://github.com/owieth/turborepo-example"
+            >View on GitHub</a
+          >
+        </div>
       </div>
-      <div class="cta-row">
-        <a class="btn btn-primary" href="#quick-start">Get Started</a>
-        <a class="btn btn-secondary" href="https://github.com/owieth/turborepo-example">View on GitHub</a>
-      </div>
-    </div>
 
-    <!-- Tech Stack -->
-    <section>
-      <h2>Tech Stack</h2>
-      <p class="section-desc">Built on a modern, production-ready foundation.</p>
-      <div class="grid-2">
-        <div class="card tech-card">
-          <div>
-            <h3>Next.js</h3>
-            <span class="tech-version">16.1.7</span>
+      <!-- Tech Stack -->
+      <section>
+        <h2>Tech Stack</h2>
+        <p class="section-desc">
+          Built on a modern, production-ready foundation.
+        </p>
+        <div class="grid-2">
+          <div class="card tech-card">
+            <div>
+              <h3>Next.js</h3>
+              <span class="tech-version">16.1.7</span>
+            </div>
+          </div>
+          <div class="card tech-card">
+            <div>
+              <h3>React</h3>
+              <span class="tech-version">19.2.4</span>
+            </div>
+          </div>
+          <div class="card tech-card">
+            <div>
+              <h3>Tailwind CSS</h3>
+              <span class="tech-version">4.2.1</span>
+            </div>
+          </div>
+          <div class="card tech-card">
+            <div>
+              <h3>TypeScript</h3>
+              <span class="tech-version">5.9.3</span>
+            </div>
+          </div>
+          <div class="card tech-card">
+            <div>
+              <h3>Turborepo</h3>
+              <span class="tech-version">2.8.12</span>
+            </div>
+          </div>
+          <div class="card tech-card">
+            <div>
+              <h3>pnpm</h3>
+              <span class="tech-version">10.29.3</span>
+            </div>
+          </div>
+          <div class="card tech-card">
+            <div>
+              <h3>shadcn/ui</h3>
+              <span class="tech-version">Components</span>
+            </div>
+          </div>
+          <div class="card tech-card">
+            <div>
+              <h3>Nextra</h3>
+              <span class="tech-version">4.6.1</span>
+            </div>
           </div>
         </div>
-        <div class="card tech-card">
-          <div>
-            <h3>React</h3>
-            <span class="tech-version">19.2.4</span>
-          </div>
-        </div>
-        <div class="card tech-card">
-          <div>
-            <h3>Tailwind CSS</h3>
-            <span class="tech-version">4.2.1</span>
-          </div>
-        </div>
-        <div class="card tech-card">
-          <div>
-            <h3>TypeScript</h3>
-            <span class="tech-version">5.9.3</span>
-          </div>
-        </div>
-        <div class="card tech-card">
-          <div>
-            <h3>Turborepo</h3>
-            <span class="tech-version">2.8.12</span>
-          </div>
-        </div>
-        <div class="card tech-card">
-          <div>
-            <h3>pnpm</h3>
-            <span class="tech-version">10.29.3</span>
-          </div>
-        </div>
-        <div class="card tech-card">
-          <div>
-            <h3>shadcn/ui</h3>
-            <span class="tech-version">Components</span>
-          </div>
-        </div>
-        <div class="card tech-card">
-          <div>
-            <h3>Nextra</h3>
-            <span class="tech-version">4.6.1</span>
-          </div>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- What's Inside -->
-    <section>
-      <h2>What's Inside</h2>
-      <p class="section-desc">Two applications and three shared packages, all wired together.</p>
+      <!-- What's Inside -->
+      <section>
+        <h2>What's Inside</h2>
+        <p class="section-desc">
+          Two applications and three shared packages, all wired together.
+        </p>
 
-      <div class="card-tag">Apps</div>
-      <div class="item-row">
-        <span class="item-name">apps/web</span>
-        <span class="item-desc">Next.js application with Tailwind CSS and shared UI components. Runs on port 3000.</span>
-      </div>
-      <div class="item-row">
-        <span class="item-name">apps/docs</span>
-        <span class="item-desc">Nextra-powered documentation site with search, MDX, and theme customization. Runs on port 3001.</span>
-      </div>
+        <div class="card-tag">Apps</div>
+        <div class="item-row">
+          <span class="item-name">apps/web</span>
+          <span class="item-desc"
+            >Next.js application with Tailwind CSS and shared UI components.
+            Runs on port 3000.</span
+          >
+        </div>
+        <div class="item-row">
+          <span class="item-name">apps/docs</span>
+          <span class="item-desc"
+            >Nextra-powered documentation site with search, MDX, and theme
+            customization. Runs on port 3001.</span
+          >
+        </div>
 
-      <br>
-      <div class="card-tag">Packages</div>
-      <div class="item-row">
-        <span class="item-name">packages/ui</span>
-        <span class="item-desc">Shared React component library built with shadcn/ui, Radix primitives, and Tailwind CSS.</span>
-      </div>
-      <div class="item-row">
-        <span class="item-name">packages/tsconfig</span>
-        <span class="item-desc">Shared TypeScript configurations for Next.js apps and React libraries.</span>
-      </div>
-      <div class="item-row">
-        <span class="item-name">packages/eslint-config-custom</span>
-        <span class="item-desc">Shared ESLint configuration extending Next.js, Turborepo, and Prettier rules.</span>
-      </div>
-    </section>
+        <br />
+        <div class="card-tag">Packages</div>
+        <div class="item-row">
+          <span class="item-name">packages/ui</span>
+          <span class="item-desc"
+            >Shared React component library built with shadcn/ui, Radix
+            primitives, and Tailwind CSS.</span
+          >
+        </div>
+        <div class="item-row">
+          <span class="item-name">packages/tsconfig</span>
+          <span class="item-desc"
+            >Shared TypeScript configurations for Next.js apps and React
+            libraries.</span
+          >
+        </div>
+        <div class="item-row">
+          <span class="item-name">packages/eslint-config-custom</span>
+          <span class="item-desc"
+            >Shared ESLint configuration extending Next.js, Turborepo, and
+            Prettier rules.</span
+          >
+        </div>
+      </section>
 
-    <!-- Features -->
-    <section>
-      <h2>Features</h2>
-      <p class="section-desc">Everything you need, nothing you don't.</p>
-      <div class="grid-3">
-        <div class="card">
-          <h3>Turborepo Caching</h3>
-          <p>Incremental builds with content-aware hashing. Only rebuild what changed.</p>
+      <!-- Features -->
+      <section>
+        <h2>Features</h2>
+        <p class="section-desc">Everything you need, nothing you don't.</p>
+        <div class="grid-3">
+          <div class="card">
+            <h3>Turborepo Caching</h3>
+            <p>
+              Incremental builds with content-aware hashing. Only rebuild what
+              changed.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Shared UI Library</h3>
+            <p>
+              shadcn/ui components with Radix primitives, shared across all apps
+              via workspace references.
+            </p>
+          </div>
+          <div class="card">
+            <h3>TypeScript Strict Mode</h3>
+            <p>
+              Centralized tsconfig with strict type checking, declaration maps,
+              and isolated modules.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Tailwind CSS v4</h3>
+            <p>
+              CSS-first configuration with custom theme variables, dark mode,
+              and PostCSS integration.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Nextra Documentation</h3>
+            <p>
+              Full documentation site with MDX, full-text search, and automatic
+              navigation.
+            </p>
+          </div>
+          <div class="card">
+            <h3>pnpm Workspaces</h3>
+            <p>
+              Fast, disk-efficient package management with native monorepo
+              workspace support.
+            </p>
+          </div>
         </div>
-        <div class="card">
-          <h3>Shared UI Library</h3>
-          <p>shadcn/ui components with Radix primitives, shared across all apps via workspace references.</p>
-        </div>
-        <div class="card">
-          <h3>TypeScript Strict Mode</h3>
-          <p>Centralized tsconfig with strict type checking, declaration maps, and isolated modules.</p>
-        </div>
-        <div class="card">
-          <h3>Tailwind CSS v4</h3>
-          <p>CSS-first configuration with custom theme variables, dark mode, and PostCSS integration.</p>
-        </div>
-        <div class="card">
-          <h3>Nextra Documentation</h3>
-          <p>Full documentation site with MDX, full-text search, and automatic navigation.</p>
-        </div>
-        <div class="card">
-          <h3>pnpm Workspaces</h3>
-          <p>Fast, disk-efficient package management with native monorepo workspace support.</p>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Quick Start -->
-    <section id="quick-start">
-      <h2>Quick Start</h2>
-      <p class="section-desc">Up and running in under a minute.</p>
-      <div class="code-block">
-        <pre><span class="comment"># Clone the repository</span>
+      <!-- Quick Start -->
+      <section id="quick-start">
+        <h2>Quick Start</h2>
+        <p class="section-desc">Up and running in under a minute.</p>
+        <div class="code-block">
+          <pre><span class="comment"># Clone the repository</span>
 git clone https://github.com/owieth/turborepo-example.git
 cd turborepo-example
 
@@ -466,34 +572,47 @@ pnpm install
 
 <span class="comment"># Start all apps in development mode</span>
 pnpm dev</pre>
+        </div>
+      </section>
+
+      <!-- Project Structure -->
+      <section>
+        <h2>Project Structure</h2>
+        <p class="section-desc">A clean, scalable monorepo layout.</p>
+        <div class="tree">
+          <span class="dir">turborepo-example/</span>
+          <span class="dir"> apps/</span>
+          <span class="dir">web/</span>
+          <span class="note"> Next.js application</span>
+          <span class="dir">docs/</span>
+          <span class="note"> Nextra documentation</span>
+          <span class="dir"> packages/</span>
+          <span class="dir">ui/</span>
+          <span class="note"> Shared component library</span>
+          <span class="dir">tsconfig/</span>
+          <span class="note"> TypeScript configurations</span>
+          <span class="dir">eslint-config-custom/</span>
+          <span class="note"> ESLint shared config</span> package.json
+          <span class="note"> Root monorepo config</span> turbo.json
+          <span class="note"> Turborepo task orchestration</span>
+          pnpm-workspace.yaml <span class="note"> Workspace definition</span>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>
+          &copy;
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          Olivier Winkler.
+          <a href="https://github.com/owieth/turborepo-example"
+            >View on GitHub</a
+          >
+        </p>
       </div>
-    </section>
-
-    <!-- Project Structure -->
-    <section>
-      <h2>Project Structure</h2>
-      <p class="section-desc">A clean, scalable monorepo layout.</p>
-      <div class="tree">
-<span class="dir">turborepo-example/</span>
-<span class="dir">  apps/</span>
-    <span class="dir">web/</span>             <span class="note">  Next.js application</span>
-    <span class="dir">docs/</span>            <span class="note">  Nextra documentation</span>
-<span class="dir">  packages/</span>
-    <span class="dir">ui/</span>              <span class="note">  Shared component library</span>
-    <span class="dir">tsconfig/</span>        <span class="note">  TypeScript configurations</span>
-    <span class="dir">eslint-config-custom/</span> <span class="note">  ESLint shared config</span>
-  package.json       <span class="note">  Root monorepo config</span>
-  turbo.json         <span class="note">  Turborepo task orchestration</span>
-  pnpm-workspace.yaml <span class="note">  Workspace definition</span></div>
-    </section>
-
-  </main>
-
-  <footer>
-    <div class="container">
-      <p>&copy; <script>document.write(new Date().getFullYear())</script> Olivier Winkler. <a href="https://github.com/owieth/turborepo-example">View on GitHub</a></p>
-    </div>
-  </footer>
-
-</body>
+    </footer>
+  </body>
 </html>

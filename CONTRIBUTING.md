@@ -14,17 +14,20 @@ pnpm dev
 ## Development Workflow
 
 1. Create a feature branch from `main`:
+
    ```bash
    git checkout -b feat/your-feature
    ```
 
 2. Make your changes and verify:
+
    ```bash
    pnpm lint
    pnpm build
    ```
 
 3. Commit using [Conventional Commits](https://www.conventionalcommits.org/):
+
    ```
    feat(scope): add new feature
    fix(scope): fix bug description
@@ -63,10 +66,10 @@ Or create components manually in `packages/ui/components/` following existing pa
 
 ## Project Structure
 
-| Directory | Purpose |
-|-----------|---------|
-| `apps/web` | Next.js application |
-| `apps/docs` | Nextra documentation site |
-| `packages/ui` | Shared component library |
-| `packages/tsconfig` | TypeScript configurations |
-| `packages/eslint-config-custom` | ESLint configuration |
+| Directory                       | Purpose                   |
+| ------------------------------- | ------------------------- |
+| `apps/web`                      | Next.js application       |
+| `apps/docs`                     | Nextra documentation site |
+| `packages/ui`                   | Shared component library  |
+| `packages/tsconfig`             | TypeScript configurations |
+| `packages/eslint-config-custom` | ESLint configuration      |

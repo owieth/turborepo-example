@@ -20,18 +20,18 @@ graph TD
 
 ### Apps
 
-| App | Description | Port |
-|-----|-------------|------|
-| `apps/web` | Next.js application with Tailwind CSS | 3000 |
-| `apps/docs` | Nextra documentation site | 3001 |
+| App         | Description                           | Port |
+| ----------- | ------------------------------------- | ---- |
+| `apps/web`  | Next.js application with Tailwind CSS | 3000 |
+| `apps/docs` | Nextra documentation site             | 3001 |
 
 ### Packages
 
-| Package | Description |
-|---------|-------------|
-| `packages/ui` | Shared React component library (shadcn/ui, Radix, Tailwind) |
-| `packages/tsconfig` | Shared TypeScript configurations |
-| `packages/eslint-config-custom` | Shared ESLint configuration |
+| Package                         | Description                                                 |
+| ------------------------------- | ----------------------------------------------------------- |
+| `packages/ui`                   | Shared React component library (shadcn/ui, Radix, Tailwind) |
+| `packages/tsconfig`             | Shared TypeScript configurations                            |
+| `packages/eslint-config-custom` | Shared ESLint configuration                                 |
 
 ## Prerequisites
 
@@ -49,13 +49,13 @@ pnpm dev
 
 ## Scripts
 
-| Command | Description |
-|---------|-------------|
-| `pnpm dev` | Start all apps in development mode |
-| `pnpm build` | Build all apps and packages |
-| `pnpm lint` | Lint all apps and packages |
-| `pnpm clean` | Clean all build outputs |
-| `pnpm prettier` | Format all files |
+| Command         | Description                        |
+| --------------- | ---------------------------------- |
+| `pnpm dev`      | Start all apps in development mode |
+| `pnpm build`    | Build all apps and packages        |
+| `pnpm lint`     | Lint all apps and packages         |
+| `pnpm clean`    | Clean all build outputs            |
+| `pnpm prettier` | Format all files                   |
 
 ## Project Structure
 
