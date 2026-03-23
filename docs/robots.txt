@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://owieth.github.io/turborepo-example/sitemap.xml
