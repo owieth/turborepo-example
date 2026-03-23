@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import { Button } from '@ui/components/button';
+import { ThemeToggle } from '@ui/components/theme-toggle';
 
 const FEATURES = [
   {
@@ -35,6 +36,9 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <div className="min-h-screen">
+      <div className="fixed top-4 right-4">
+        <ThemeToggle />
+      </div>
       <header className="flex flex-col items-center justify-center px-4 pt-24 pb-16 text-center sm:pt-32">
         <p className="mb-4 text-sm font-medium uppercase tracking-widest text-zinc-500">
           Monorepo Template
