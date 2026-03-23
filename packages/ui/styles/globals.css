@@ -71,18 +71,18 @@
 
   @keyframes accordion-down {
     from {
-      height: 0;
+      grid-template-rows: 0fr;
     }
     to {
-      height: var(--radix-accordion-content-height);
+      grid-template-rows: 1fr;
     }
   }
   @keyframes accordion-up {
     from {
-      height: var(--radix-accordion-content-height);
+      grid-template-rows: 1fr;
     }
     to {
-      height: 0;
+      grid-template-rows: 0fr;
     }
   }
   @keyframes flip {
