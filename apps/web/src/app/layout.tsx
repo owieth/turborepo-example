@@ -2,6 +2,8 @@ import type { Metadata, Viewport } from 'next';
 
 import 'ui/styles/globals.css';
 
+import { Providers } from './providers';
+
 export const metadata: Metadata = {
   title: {
     default: 'Web — Turborepo Example',
@@ -24,8 +26,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="bg-zinc-900">
-      <body>{children}</body>
+    <html lang="en" suppressHydrationWarning>
+      <body>
+        <Providers>{children}</Providers>
+      </body>
     </html>
   );
 }
