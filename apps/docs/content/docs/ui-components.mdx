@@ -1,0 +1,67 @@
+---
+title: UI Components
+description: Shared component library documentation
+---
+
+# UI Components
+
+The `packages/ui` package provides shared React components built with shadcn/ui patterns.
+
+## Button
+
+A versatile button component with multiple variants and sizes.
+
+### Variants
+
+- `default` — Primary action
+- `destructive` — Destructive/danger action
+- `outline` — Bordered button
+- `secondary` — Secondary action
+- `ghost` — Minimal button
+- `link` — Link-styled button
+
+### Sizes
+
+- `default` — Standard size (h-10)
+- `sm` — Small (h-9)
+- `lg` — Large (h-11)
+- `icon` — Square icon button (h-10 w-10)
+
+### Usage
+
+```tsx
+import { Button } from '@ui/components/button';
+
+export function Example() {
+  return (
+    <div>
+      <Button>Default</Button>
+      <Button variant="destructive">Delete</Button>
+      <Button variant="outline" size="sm">Small Outline</Button>
+    </div>
+  );
+}
+```
+
+## Adding Components
+
+Use the shadcn CLI to add new components:
+
+```bash
+cd packages/ui
+pnpm ui:add
+```
+
+Or create components manually in `packages/ui/components/` following the existing patterns.
+
+## Utilities
+
+### `cn()`
+
+Combines class names with `clsx` and resolves Tailwind conflicts with `tailwind-merge`:
+
+```tsx
+import { cn } from '@ui/lib/utils';
+
+cn('px-4 py-2', condition && 'bg-primary', className);
+```
