@@ -17,7 +17,7 @@
     "eslint-config-custom": "workspace:*",
     "jsdom": "^29.0.1",
     "postcss": "^8.5.8",
-    "react": "^19.2.4",
+    "react": "^19.2.5",
     "tailwindcss": "^4.2.1",
     "tsconfig": "workspace:*",
     "typescript": "5.9.3"
