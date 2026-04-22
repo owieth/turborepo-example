@@ -21,7 +21,7 @@
     ]
   },
   "dependencies": {
-    "next": "16.2.3"
+    "next": "16.2.4"
   },
   "devDependencies": {
     "@turbo/gen": "^2.9.6",
