@@ -17,6 +17,7 @@ build
 
 # debug
 npm-debug.log*
+*.tsbuildinfo
 
 # local env files
 .env
