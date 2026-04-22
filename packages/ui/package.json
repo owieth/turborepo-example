@@ -20,7 +20,7 @@
     "react": "^19.2.5",
     "tailwindcss": "^4.2.1",
     "tsconfig": "workspace:*",
-    "typescript": "5.9.3"
+    "typescript": "6.0.3"
   },
   "peerDependencies": {
     "next-themes": ">=0.4.0"
