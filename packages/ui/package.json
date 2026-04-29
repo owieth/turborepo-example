@@ -18,7 +18,7 @@
     "jsdom": "^29.0.2",
     "postcss": "^8.5.10",
     "react": "^19.2.5",
-    "tailwindcss": "^4.2.1",
+    "tailwindcss": "^4.2.4",
     "tsconfig": "workspace:*",
     "typescript": "6.0.3"
   },
