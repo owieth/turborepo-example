@@ -24,7 +24,7 @@
     "next": "16.2.4"
   },
   "devDependencies": {
-    "@turbo/gen": "^2.9.6",
+    "@turbo/gen": "^2.9.9",
     "eslint": "^9.39.4",
     "eslint-config-custom": "workspace:*",
     "husky": "^9.1.7",
@@ -32,7 +32,7 @@
     "prettier": "^3.8.1",
     "prettier-plugin-tailwindcss": "^0.8.0",
     "syncpack": "^14.3.1",
-    "turbo": "^2.9.6",
+    "turbo": "^2.9.9",
     "vitest": "^4.1.1"
   },
   "packageManager": "pnpm@10.29.3",
