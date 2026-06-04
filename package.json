@@ -24,7 +24,7 @@
     "next": "16.2.7"
   },
   "devDependencies": {
-    "@turbo/gen": "^2.9.9",
+    "@turbo/gen": "^2.9.16",
     "eslint": "^9.39.4",
     "eslint-config-custom": "workspace:*",
     "husky": "^9.1.7",
